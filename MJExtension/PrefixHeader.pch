@@ -1,0 +1,19 @@
+//
+//  PrefixHeader.pch
+//  MJExtension字典转模型
+//
+//  Created by Jobs on 2020/7/24.
+//  Copyright © 2020 wanglei. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "MJExtension.h"
+#import "BaseModel.h"
+#import "MKCommentModel.h"
+
+#endif /* PrefixHeader_pch */

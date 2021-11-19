@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4B3B1EBB0F41DF104FB95A8D /* libPods-MJExtension字典转模型.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 66428F5DCEB5989B6AA5B6B3 /* libPods-MJExtension字典转模型.a */; };
+		BB303C0B1E15037C0071FF9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB303C0A1E15037C0071FF9D /* main.m */; };
+		BB303C0E1E15037C0071FF9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB303C0D1E15037C0071FF9D /* AppDelegate.m */; };
+		BB303C111E15037C0071FF9D /* KKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB303C101E15037C0071FF9D /* KKViewController.m */; };
+		BB303C141E15037C0071FF9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB303C121E15037C0071FF9D /* Main.storyboard */; };
+		BB303C161E15037C0071FF9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB303C151E15037C0071FF9D /* Assets.xcassets */; };
+		BB303C191E15037C0071FF9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB303C171E15037C0071FF9D /* LaunchScreen.storyboard */; };
+		BB303C211E1505630071FF9D /* weibo.json in Resources */ = {isa = PBXBuildFile; fileRef = BB303C201E1505630071FF9D /* weibo.json */; };
+		BB303C241E1505EE0071FF9D /* CZWeibo.m in Sources */ = {isa = PBXBuildFile; fileRef = BB303C231E1505EE0071FF9D /* CZWeibo.m */; };
+		BB303C271E1507C00071FF9D /* CZStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = BB303C261E1507C00071FF9D /* CZStatus.m */; };
+		BB303C2A1E1507CF0071FF9D /* CZAd.m in Sources */ = {isa = PBXBuildFile; fileRef = BB303C291E1507CF0071FF9D /* CZAd.m */; };
+		BB303C2D1E150B220071FF9D /* CZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BB303C2C1E150B220071FF9D /* CZUser.m */; };
+		BB303C301E15183C0071FF9D /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = BB303C2F1E15183C0071FF9D /* User.m */; };
+		BB303C321E151A520071FF9D /* weibo1.json in Resources */ = {isa = PBXBuildFile; fileRef = BB303C311E151A520071FF9D /* weibo1.json */; };
+		C54AEB3A24CA8D2E00121233 /* MKData.json in Resources */ = {isa = PBXBuildFile; fileRef = C54AEB3924CA8D2E00121233 /* MKData.json */; };
+		C54AEB4024CA8EBB00121233 /* MKCommentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AEB3F24CA8EBB00121233 /* MKCommentModel.m */; };
+		C54AEB4324CA8ED600121233 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AEB4124CA8ED600121233 /* BaseModel.m */; };
+		C54AEB4624CA8F5800121233 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C54AEB4524CA8F5800121233 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D296D780C659AB384404DDB /* Pods-MJExtension字典转模型.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJExtension字典转模型.release.xcconfig"; path = "Pods/Target Support Files/Pods-MJExtension字典转模型/Pods-MJExtension字典转模型.release.xcconfig"; sourceTree = "<group>"; };
+		591FFFFA2255623973E1C4D7 /* Pods-MJExtension字典转模型.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MJExtension字典转模型.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MJExtension字典转模型/Pods-MJExtension字典转模型.debug.xcconfig"; sourceTree = "<group>"; };
+		66428F5DCEB5989B6AA5B6B3 /* libPods-MJExtension字典转模型.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MJExtension字典转模型.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB303C061E15037C0071FF9D /* MJExtension字典转模型.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MJExtension字典转模型.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB303C0A1E15037C0071FF9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BB303C0C1E15037C0071FF9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BB303C0D1E15037C0071FF9D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BB303C0F1E15037C0071FF9D /* KKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KKViewController.h; sourceTree = "<group>"; };
+		BB303C101E15037C0071FF9D /* KKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KKViewController.m; sourceTree = "<group>"; };
+		BB303C131E15037C0071FF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB303C151E15037C0071FF9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB303C181E15037C0071FF9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB303C1A1E15037C0071FF9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB303C201E1505630071FF9D /* weibo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo.json; sourceTree = "<group>"; };
+		BB303C221E1505EE0071FF9D /* CZWeibo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZWeibo.h; sourceTree = "<group>"; };
+		BB303C231E1505EE0071FF9D /* CZWeibo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZWeibo.m; sourceTree = "<group>"; };
+		BB303C251E1507C00071FF9D /* CZStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZStatus.h; sourceTree = "<group>"; };
+		BB303C261E1507C00071FF9D /* CZStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZStatus.m; sourceTree = "<group>"; };
+		BB303C281E1507CF0071FF9D /* CZAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZAd.h; sourceTree = "<group>"; };
+		BB303C291E1507CF0071FF9D /* CZAd.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZAd.m; sourceTree = "<group>"; };
+		BB303C2B1E150B220071FF9D /* CZUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CZUser.h; sourceTree = "<group>"; };
+		BB303C2C1E150B220071FF9D /* CZUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CZUser.m; sourceTree = "<group>"; };
+		BB303C2E1E15183C0071FF9D /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		BB303C2F1E15183C0071FF9D /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		BB303C311E151A520071FF9D /* weibo1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = weibo1.json; sourceTree = "<group>"; };
+		C54AEB3924CA8D2E00121233 /* MKData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MKData.json; sourceTree = "<group>"; };
+		C54AEB3E24CA8EBB00121233 /* MKCommentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKCommentModel.h; sourceTree = "<group>"; };
+		C54AEB3F24CA8EBB00121233 /* MKCommentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKCommentModel.m; sourceTree = "<group>"; };
+		C54AEB4124CA8ED600121233 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		C54AEB4224CA8ED600121233 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		C54AEB4424CA8F5800121233 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C54AEB4524CA8F5800121233 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C558729324CAE4F800414C93 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB303C031E15037C0071FF9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B3B1EBB0F41DF104FB95A8D /* libPods-MJExtension字典转模型.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85E4BC8C9E15B9386D5EDDB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66428F5DCEB5989B6AA5B6B3 /* libPods-MJExtension字典转模型.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8E2AD770D26EB6CFD5D8910A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				591FFFFA2255623973E1C4D7 /* Pods-MJExtension字典转模型.debug.xcconfig */,
+				1D296D780C659AB384404DDB /* Pods-MJExtension字典转模型.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB303BFD1E15037C0071FF9D = {
+			isa = PBXGroup;
+			children = (
+				C558729324CAE4F800414C93 /* PrefixHeader.pch */,
+				BB303C081E15037C0071FF9D /* MJExtension字典转模型 */,
+				BB303C071E15037C0071FF9D /* Products */,
+				8E2AD770D26EB6CFD5D8910A /* Pods */,
+				85E4BC8C9E15B9386D5EDDB5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB303C071E15037C0071FF9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB303C061E15037C0071FF9D /* MJExtension字典转模型.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB303C081E15037C0071FF9D /* MJExtension字典转模型 */ = {
+			isa = PBXGroup;
+			children = (
+				BB303C1A1E15037C0071FF9D /* Info.plist */,
+				BB303C091E15037C0071FF9D /* Supporting Files */,
+				C54AEB3824CA8CEA00121233 /* Model */,
+				C54AEB3724CA8CC700121233 /* Others */,
+				C54AEB3624CA8CA700121233 /* Data */,
+				C54AEB4424CA8F5800121233 /* ViewController.h */,
+				C54AEB4524CA8F5800121233 /* ViewController.m */,
+				C54AEB4224CA8ED600121233 /* BaseModel.h */,
+				C54AEB4124CA8ED600121233 /* BaseModel.m */,
+				C54AEB3E24CA8EBB00121233 /* MKCommentModel.h */,
+				C54AEB3F24CA8EBB00121233 /* MKCommentModel.m */,
+			);
+			path = "MJExtension字典转模型";
+			sourceTree = "<group>";
+		};
+		BB303C091E15037C0071FF9D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB303C0A1E15037C0071FF9D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C54AEB3624CA8CA700121233 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BB303C311E151A520071FF9D /* weibo1.json */,
+				BB303C201E1505630071FF9D /* weibo.json */,
+				C54AEB3924CA8D2E00121233 /* MKData.json */,
+				BB303C0F1E15037C0071FF9D /* KKViewController.h */,
+				BB303C101E15037C0071FF9D /* KKViewController.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		C54AEB3724CA8CC700121233 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				BB303C0C1E15037C0071FF9D /* AppDelegate.h */,
+				BB303C0D1E15037C0071FF9D /* AppDelegate.m */,
+				BB303C121E15037C0071FF9D /* Main.storyboard */,
+				BB303C151E15037C0071FF9D /* Assets.xcassets */,
+				BB303C171E15037C0071FF9D /* LaunchScreen.storyboard */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		C54AEB3824CA8CEA00121233 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB303C2E1E15183C0071FF9D /* User.h */,
+				BB303C2F1E15183C0071FF9D /* User.m */,
+				BB303C281E1507CF0071FF9D /* CZAd.h */,
+				BB303C291E1507CF0071FF9D /* CZAd.m */,
+				BB303C251E1507C00071FF9D /* CZStatus.h */,
+				BB303C261E1507C00071FF9D /* CZStatus.m */,
+				BB303C2B1E150B220071FF9D /* CZUser.h */,
+				BB303C2C1E150B220071FF9D /* CZUser.m */,
+				BB303C221E1505EE0071FF9D /* CZWeibo.h */,
+				BB303C231E1505EE0071FF9D /* CZWeibo.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB303C051E15037C0071FF9D /* MJExtension字典转模型 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB303C1D1E15037C0071FF9D /* Build configuration list for PBXNativeTarget "MJExtension字典转模型" */;
+			buildPhases = (
+				2C4975ECB2E6D7FC9D03822E /* [CP] Check Pods Manifest.lock */,
+				BB303C021E15037C0071FF9D /* Sources */,
+				BB303C031E15037C0071FF9D /* Frameworks */,
+				BB303C041E15037C0071FF9D /* Resources */,
+				0A88E5A008490A6AD296A731 /* [CP] Embed Pods Frameworks */,
+				8EA417D18CD7C61BC4DE867D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MJExtension字典转模型";
+			productName = "MJExtension字典转模型";
+			productReference = BB303C061E15037C0071FF9D /* MJExtension字典转模型.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB303BFE1E15037C0071FF9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = wanglei;
+				TargetAttributes = {
+					BB303C051E15037C0071FF9D = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = V7FP4Z98TQ;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BB303C011E15037C0071FF9D /* Build configuration list for PBXProject "MJExtension字典转模型" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = BB303BFD1E15037C0071FF9D;
+			productRefGroup = BB303C071E15037C0071FF9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB303C051E15037C0071FF9D /* MJExtension字典转模型 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB303C041E15037C0071FF9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB303C211E1505630071FF9D /* weibo.json in Resources */,
+				BB303C191E15037C0071FF9D /* LaunchScreen.storyboard in Resources */,
+				C54AEB3A24CA8D2E00121233 /* MKData.json in Resources */,
+				BB303C161E15037C0071FF9D /* Assets.xcassets in Resources */,
+				BB303C141E15037C0071FF9D /* Main.storyboard in Resources */,
+				BB303C321E151A520071FF9D /* weibo1.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A88E5A008490A6AD296A731 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJExtension字典转模型/Pods-MJExtension字典转模型-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C4975ECB2E6D7FC9D03822E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8EA417D18CD7C61BC4DE867D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MJExtension字典转模型/Pods-MJExtension字典转模型-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB303C021E15037C0071FF9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB303C301E15183C0071FF9D /* User.m in Sources */,
+				BB303C111E15037C0071FF9D /* KKViewController.m in Sources */,
+				C54AEB4324CA8ED600121233 /* BaseModel.m in Sources */,
+				BB303C0E1E15037C0071FF9D /* AppDelegate.m in Sources */,
+				BB303C2D1E150B220071FF9D /* CZUser.m in Sources */,
+				C54AEB4624CA8F5800121233 /* ViewController.m in Sources */,
+				BB303C0B1E15037C0071FF9D /* main.m in Sources */,
+				BB303C271E1507C00071FF9D /* CZStatus.m in Sources */,
+				C54AEB4024CA8EBB00121233 /* MKCommentModel.m in Sources */,
+				BB303C241E1505EE0071FF9D /* CZWeibo.m in Sources */,
+				BB303C2A1E1507CF0071FF9D /* CZAd.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB303C121E15037C0071FF9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB303C131E15037C0071FF9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB303C171E15037C0071FF9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB303C181E15037C0071FF9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB303C1B1E15037C0071FF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB303C1C1E15037C0071FF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB303C1E1E15037C0071FF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 591FFFFA2255623973E1C4D7 /* Pods-MJExtension字典转模型.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V7FP4Z98TQ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
+				INFOPLIST_FILE = "MJExtension字典转模型/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.dajie.com.MJExtension-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB303C1F1E15037C0071FF9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D296D780C659AB384404DDB /* Pods-MJExtension字典转模型.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V7FP4Z98TQ;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/PrefixHeader.pch";
+				INFOPLIST_FILE = "MJExtension字典转模型/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "www.dajie.com.MJExtension-----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB303C011E15037C0071FF9D /* Build configuration list for PBXProject "MJExtension字典转模型" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB303C1B1E15037C0071FF9D /* Debug */,
+				BB303C1C1E15037C0071FF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB303C1D1E15037C0071FF9D /* Build configuration list for PBXNativeTarget "MJExtension字典转模型" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB303C1E1E15037C0071FF9D /* Debug */,
+				BB303C1F1E15037C0071FF9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB303BFE1E15037C0071FF9D /* Project object */;
+}

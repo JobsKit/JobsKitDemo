@@ -1,0 +1,39 @@
+//
+//  PrefixHeader.pch
+//  SelectorBlock
+//
+//  Created by Jobs on 2021/2/18.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "PodsHeader.h"
+#import "JobsBaseCustomizeUIKitCoreHeader.h"
+
+#define MainScreen          UIScreen.mainScreen.bounds.size
+#define Device_Width        MainScreen.width//获取屏幕宽高
+#define Device_Height       MainScreen.height
+#define SCREEN_WIDTH    Device_Width
+#define SCREEN_HEIGHT   Device_Height
+
+#define StringFormat(format,...) [NSString stringWithFormat:format, ##__VA_ARGS__]
+#define KWidth(width) (SCREEN_WIDTH / 375) * width //375 对应原型图的宽
+#define KHeight(height) (SCREEN_HEIGHT / 743) * height //743 对应原型图的高
+#define ReuseIdentifier NSStringFromClass ([self class])
+
+///随机颜色
+#define RandomColor [UIColor colorWithRed:arc4random_uniform(256) / 255.0 \
+green:arc4random_uniform(256) / 255.0 \
+blue:arc4random_uniform(256) / 255.0 \
+alpha:1] \
+
+#define SuppressWdeprecatedDeclarationsWarning(Stuff) \
+    do { \
+        _Pragma("clang diagnostic push") \
+        _Pragma("clang diagnostic ignored \"-Wdeprecated-declarations\"") \
+        Stuff; \
+        _Pragma("clang diagnostic pop") \
+} while (0)
+
+#endif /* PrefixHeader_pch */
