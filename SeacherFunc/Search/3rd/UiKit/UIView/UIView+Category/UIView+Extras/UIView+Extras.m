@@ -7,7 +7,6 @@
 //
 
 #import "UIView+Extras.h"
-#import "UIView+Measure.h"
 
 static const void *leftLittleButtonEventBlockKey = &leftLittleButtonEventBlockKey;
 static const void *leftButtonEventBlockKey = &leftButtonEventBlockKey;
@@ -235,6 +234,21 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
     
     targetShadowview.layer.shadowPath = path.CGPath;
 }
+/// 监听键盘事件
+-(void)monitorKeyboardAction{
+    [[NSNotificationCenter defaultCenter]addObserver:self
+                                            selector:@selector(keyboardWillShow:)
+                                                name:UIKeyboardWillShowNotification
+                                              object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self
+                                            selector:@selector(keyboardWillHide:)
+                                                name:UIKeyboardWillHideNotification
+                                              object:nil];
+
+}
+
+-(void)keyboardWillShow:(NSNotification *)notification {}
+-(void)keyboardWillHide:(NSNotification *)notification {}
 
 @end
 

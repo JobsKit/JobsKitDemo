@@ -12,7 +12,7 @@
 -(instancetype)init{
     if (self = [super init]) {
         self.clearButtonMode = UITextFieldViewModeWhileEditing;
-        [self modifyClearButtonWithImage:KBuddleIMG(@"⚽️PicResource",@"ZYTextField", nil, @"closeCircle")];
+        [self modifyClearButtonWithImage:KIMG(@"closeCircle")];
     }return self;
 }
 
@@ -24,6 +24,12 @@
     }
 }
 
+-(BOOL)canPerformAction:(SEL)action
+             withSender:(id)sender{
+    UIMenuController.sharedMenuController.menuVisible = self.isShowMenu;
+    return self.isShowMenu;
+}
+
 - (void)setUpUI{
     //字体大小
     self.font = self.ZYtextFont;
@@ -31,12 +37,17 @@
     self.textColor = self.ZYtextColor;
     //光标颜色
     self.tintColor = self.ZYtintColor;
-    //占位符的颜色和大小
-    UILabel *placeholderLabel = object_getIvar(self,
-                                               class_getInstanceVariable(UITextField.class,
-                                                                         "_placeholderLabel"));
-    placeholderLabel.textColor = self.ZYplaceholderLabelTextColor_1;
-    placeholderLabel.font = self.ZYplaceholderLabelFont_1;
+    
+    if (@available(iOS 13.0, *)) {
+
+    }else{
+        //占位符的颜色和大小
+        UILabel *placeholderLabel = object_getIvar(self,
+                                                   class_getInstanceVariable(UITextField.class,
+                                                                             "_placeholderLabel"));
+        placeholderLabel.textColor = self.ZYplaceholderLabelTextColor_1;
+        placeholderLabel.font = self.ZYplaceholderLabelFont_1;
+    }
     // 不成为第一响应者
     [self resignFirstResponder];
     self.isOk = YES;
@@ -45,25 +56,33 @@
  * 当前文本框聚焦时就会调用
  */
 - (BOOL)becomeFirstResponder{
-    // 修改占位文字颜色
-    UILabel *placeholderLabel = object_getIvar(self,
-                                               class_getInstanceVariable(UITextField.class,
-                                                                         "_placeholderLabel"));
-    placeholderLabel.textColor = self.ZYplaceholderLabelTextColor_2;
-    placeholderLabel.font = self.ZYplaceholderLabelFont_2;
+    if (@available(iOS 13.0, *)) {
+
+    }else{
+        // 修改占位文字颜色
+        UILabel *placeholderLabel = object_getIvar(self,
+                                                   class_getInstanceVariable(UITextField.class,
+                                                                             "_placeholderLabel"));
+        placeholderLabel.textColor = self.ZYplaceholderLabelTextColor_2;
+        placeholderLabel.font = self.ZYplaceholderLabelFont_2;
+    }
+    
     return [super becomeFirstResponder];
 }
 /**
  * 当前文本框失去焦点时就会调用
  */
 - (BOOL)resignFirstResponder{
-    // 修改占位文字颜色
-    UILabel *placeholderLabel = object_getIvar(self,
-                                               class_getInstanceVariable(UITextField.class,
-                                                                         "_placeholderLabel"));
-    placeholderLabel.textColor = self.ZYplaceholderLabelTextColor_1;
-    placeholderLabel.font = self.ZYplaceholderLabelFont_1;
-    return [super resignFirstResponder];
+    if (@available(iOS 13.0, *)) {
+
+    }else{
+        // 修改占位文字颜色
+        UILabel *placeholderLabel = object_getIvar(self,
+                                                   class_getInstanceVariable(UITextField.class,
+                                                                             "_placeholderLabel"));
+        placeholderLabel.textColor = self.ZYplaceholderLabelTextColor_1;
+        placeholderLabel.font = self.ZYplaceholderLabelFont_1;
+    }return [super resignFirstResponder];
 }
 #pragma mark —— 重写父类方法
 -(void)drawPlaceholderInRect:(CGRect)rect {
@@ -88,27 +107,47 @@
     iconRect.origin.x -= self.rightViewOffsetX;
     return iconRect;
 }
-//控制placeHolder的位置
+// placeholder起始位置
 -(CGRect)placeholderRectForBounds:(CGRect)bounds{
-    CGRect inset = CGRectMake(bounds.origin.x + self.offset,
-                              bounds.origin.y,
-                              bounds.size.width - self.offset,
-                              bounds.size.height);
-    return inset;
+    
+    CGRect newbounds = bounds;
+    CGSize size = [self.placeholder sizeWithAttributes:@{NSFontAttributeName:self.font}];
+    
+    switch (self.placeHolderAlignment) {
+        case PlaceHolderAlignmentLeft:{
+            newbounds.origin.x += self.placeHolderOffset + self.leftViewOffsetX;
+            return newbounds;
+        }break;
+        case PlaceHolderAlignmentCenter:{
+            CGFloat width = bounds.size.width - size.width;
+            newbounds.origin.x = width / 2 + self.placeHolderOffset + self.leftViewOffsetX;
+            newbounds.size.width = size.width;
+            return newbounds;
+        }break;
+        case PlaceHolderAlignmentRight:{
+            CGFloat width = bounds.size.width - size.width;
+            newbounds.origin.x = width - (self.placeHolderOffset + self.leftViewOffsetX);
+            newbounds.size.width = size.width;
+            return newbounds;
+        }break;
+        default:
+            return CGRectZero;
+            break;
+    }
 }
-//控制显示文本的位置
+//未编辑状态下的起始位置
 -(CGRect)textRectForBounds:(CGRect)bounds{
-    CGRect inset = CGRectMake(bounds.origin.x + self.offset,
+    CGRect inset = CGRectMake(bounds.origin.x + self.offset + self.leftViewOffsetX,
                               bounds.origin.y,
-                              bounds.size.width - self.offset,
+                              bounds.size.width - (self.offset + self.leftViewOffsetX + self.rightViewOffsetX),
                               bounds.size.height);
     return inset;
 }
-//控制编辑文本的位置
+//编辑状态下的起始位置
 -(CGRect)editingRectForBounds:(CGRect)bounds{
-    CGRect inset = CGRectMake(bounds.origin.x + self.offset,
+    CGRect inset = CGRectMake(bounds.origin.x + self.offset + self.leftViewOffsetX,
                               bounds.origin.y,
-                              bounds.size.width - self.offset,
+                              bounds.size.width - (self.offset + self.leftViewOffsetX + self.rightViewOffsetX),
                               bounds.size.height);
     return inset;
 }
@@ -126,19 +165,44 @@
         }
     }
 }
+///输入的和某个预设定值不一致的时候，抖动动画
+- (void)isValidate:(NSString *)validate{
+    if (![self.text isEqualToString:validate]) {
+        [self shakeAnimationForView:self];
+    }
+}
+///输入的为空，抖动动画
+-(void)isEmptyText{
+    if ([NSString isNullString:self.text]) {
+        [self shakeAnimationForView:self];
+    }
+}
+
+-(void)shakeAnimationForView:(UIView *)view{
+    CALayer *lay_lb = [view layer];
+    CGPoint pos_lb = [lay_lb position];
+    CGPoint y = CGPointMake(pos_lb.x-10, pos_lb.y);
+    CGPoint x = CGPointMake(pos_lb.x+10, pos_lb.y);
+    CABasicAnimation * animation = [CABasicAnimation animationWithKeyPath:@"position"];
+    [animation setTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut]];
+    [animation setFromValue:[NSValue valueWithCGPoint:x]];
+    [animation setToValue:[NSValue valueWithCGPoint:y]];
+    [animation setAutoreverses:YES];
+    [animation setDuration:0.08];
+    [animation setRepeatCount:3];
+    [lay_lb addAnimation:animation forKey:nil];
+}
 #pragma mark —— lazyLoad
 -(UIFont *)ZYtextFont{
     if (!_ZYtextFont) {
-        _ZYtextFont = [UIFont systemFontOfSize:17
+        _ZYtextFont = [UIFont systemFontOfSize:10
                                         weight:UIFontWeightRegular];
     }return _ZYtextFont;
 }
 
 -(UIColor *)ZYtextColor{
     if (!_ZYtextColor) {
-        _ZYtextColor = RGBCOLOR(77,
-                                150,
-                                132);
+        _ZYtextColor = KGreenColor;
     }return _ZYtextColor;
 }
 

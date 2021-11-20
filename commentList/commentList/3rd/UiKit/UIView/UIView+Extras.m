@@ -13,8 +13,12 @@ static const void *leftButtonEventBlockKey = &leftButtonEventBlockKey;
 static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
 
 @implementation UIView (Extras)
-
-- (void)setBorderWithView:(UIView *__nonnull)view
+/// 指定描边
+/// @param view 作用view
+/// @param color 作用颜色
+/// @param width 线宽
+/// @param borderType 作用方向
++ (void)setBorderWithView:(UIView *__nonnull)view
               borderColor:(UIColor *__nonnull)color
               borderWidth:(CGFloat)width
                borderType:(UIBorderSideType)borderType{
@@ -66,7 +70,7 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
  @param cornerRadiusValue 切角参数
  */
 +(void)cornerCutToCircleWithView:(UIView *__nonnull)view
-                 AndCornerRadius:(CGFloat)cornerRadiusValue{
+                 andCornerRadius:(CGFloat)cornerRadiusValue{
     view.layer.cornerRadius = cornerRadiusValue;
     view.layer.masksToBounds = YES;
 }
@@ -78,8 +82,8 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
  @param WidthOfBorder 边线宽度
  */
 +(void)colourToLayerOfView:(UIView *__nonnull)view
-                WithColour:(UIColor *__nonnull)colour
-            AndBorderWidth:(CGFloat)WidthOfBorder{
+                withColour:(UIColor *__nonnull)colour
+            andBorderWidth:(CGFloat)WidthOfBorder{
     view.layer.borderColor = colour.CGColor;
     view.layer.borderWidth = WidthOfBorder;
 }
@@ -126,8 +130,7 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
     UIGraphicsEndImageContext();
     return image;
 }
-
-/// iOS 阴影效果 添加了shadowPath后消除了离屏渲染问题
+/// iOS 阴影效果 添加了shadowPath后消除了离屏渲染问题 。特别提示：不能存在 -(void)drawRect:(CGRect)rect 或者在-(void)drawRect:(CGRect)rect里面写，否则无效
 /// @param targetShadowview 需要作用阴影效果的View
 /// @param superview 该阴影效果的View的父View
 /// @param ShadowDirection 阴影朝向
@@ -231,6 +234,21 @@ static const void *rightButtonEventBlockKey = &rightButtonEventBlockKey;
     
     targetShadowview.layer.shadowPath = path.CGPath;
 }
+/// 监听键盘事件
+-(void)monitorKeyboardAction{
+    [[NSNotificationCenter defaultCenter]addObserver:self
+                                            selector:@selector(keyboardWillShow:)
+                                                name:UIKeyboardWillShowNotification
+                                              object:nil];
+    [[NSNotificationCenter defaultCenter]addObserver:self
+                                            selector:@selector(keyboardWillHide:)
+                                                name:UIKeyboardWillHideNotification
+                                              object:nil];
+
+}
+
+-(void)keyboardWillShow:(NSNotification *)notification {}
+-(void)keyboardWillHide:(NSNotification *)notification {}
 
 @end
 

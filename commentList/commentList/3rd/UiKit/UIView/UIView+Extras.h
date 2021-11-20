@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIView+Measure.h"
 
 typedef enum : NSUInteger {
     ShadowDirection_top = 0,
@@ -34,7 +35,7 @@ typedef NS_OPTIONS(NSUInteger, UIBorderSideType) {
 /// @param color 作用颜色
 /// @param width 线宽
 /// @param borderType 作用方向
-- (void)setBorderWithView:(UIView *__nonnull)view
++ (void)setBorderWithView:(UIView *__nonnull)view
               borderColor:(UIColor *__nonnull)color
               borderWidth:(CGFloat)width
                borderType:(UIBorderSideType)borderType;
@@ -45,7 +46,7 @@ typedef NS_OPTIONS(NSUInteger, UIBorderSideType) {
  @param cornerRadiusValue 切角参数
  */
 +(void)cornerCutToCircleWithView:(UIView *__nonnull)view
-                 AndCornerRadius:(CGFloat)cornerRadiusValue;
+                 andCornerRadius:(CGFloat)cornerRadiusValue;
 
 /**
  描边
@@ -55,8 +56,8 @@ typedef NS_OPTIONS(NSUInteger, UIBorderSideType) {
  @param WidthOfBorder 边线宽度
  */
 +(void)colourToLayerOfView:(UIView *__nonnull)view
-                WithColour:(UIColor *__nonnull)colour
-            AndBorderWidth:(CGFloat)WidthOfBorder;
+                withColour:(UIColor *__nonnull)colour
+            andBorderWidth:(CGFloat)WidthOfBorder;
 
 /**
  *  指定圆切角
@@ -69,8 +70,7 @@ typedef NS_OPTIONS(NSUInteger, UIBorderSideType) {
             forView:(UIView *__nonnull)view;
 //view 转 image
 + (UIImage *__nonnull)getImageFromView:(UIView *__nonnull)view;
-
-/// iOS 阴影效果 添加了shadowPath后消除了离屏渲染问题
+/// iOS 阴影效果 添加了shadowPath后消除了离屏渲染问题 。特别提示：不能存在 -(void)drawRect:(CGRect)rect 或者在-(void)drawRect:(CGRect)rect里面写，否则无效
 /// @param targetShadowview 需要作用阴影效果的View
 /// @param superview 该阴影效果的View的父View
 /// @param ShadowDirection 阴影朝向
@@ -91,5 +91,7 @@ typedef NS_OPTIONS(NSUInteger, UIBorderSideType) {
               shadowOpacity:(CGFloat)shadowOpacity
            layerShadowColor:(UIColor *__nullable)layerShadowColor
           layerShadowRadius:(CGFloat)layerShadowRadius;
+/// 监听键盘事件
+-(void)monitorKeyboardAction;
 
 @end
