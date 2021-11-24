@@ -746,6 +746,21 @@
 			path = RAC_Define;
 			sourceTree = "<group>";
 		};
+		842F71B0274E2117000E2DAE /* NSObject+Category */ = {
+			isa = PBXGroup;
+			children = (
+				84B3B4D4274D23EB0005DF73 /* NSObject+Alert */,
+				84B3B4DB274D23EB0005DF73 /* NSObject+Others */,
+				84B3B4F4274D23EB0005DF73 /* NSObject+DataSave */,
+				84B3B4F7274D23EB0005DF73 /* NSObject+Time */,
+				84B3B4FA274D23EB0005DF73 /* NSObject+DataBinding */,
+				84B3B4FD274D23EB0005DF73 /* NSObject (Time) */,
+				84B3B503274D23EB0005DF73 /* NSObject+DefConfig */,
+				84B3B506274D23EB0005DF73 /* NSObject+CallBackInfoByBlock */,
+			);
+			path = "NSObject+Category";
+			sourceTree = "<group>";
+		};
 		84B3B388274D23EA0005DF73 /* JobsBaseCustomizeUIKitCore */ = {
 			isa = PBXGroup;
 			children = (
@@ -1993,15 +2008,8 @@
 		84B3B4D3274D23EB0005DF73 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				84B3B4D4274D23EB0005DF73 /* NSObject+Alert */,
-				84B3B4DB274D23EB0005DF73 /* NSObject+Others */,
-				84B3B4F4274D23EB0005DF73 /* NSObject+DataSave */,
-				84B3B4F7274D23EB0005DF73 /* NSObject+Time */,
-				84B3B4FA274D23EB0005DF73 /* NSObject+DataBinding */,
-				84B3B4FD274D23EB0005DF73 /* NSObject (Time) */,
+				842F71B0274E2117000E2DAE /* NSObject+Category */,
 				84B3B500274D23EB0005DF73 /* DDRecord */,
-				84B3B503274D23EB0005DF73 /* NSObject+DefConfig */,
-				84B3B506274D23EB0005DF73 /* NSObject+CallBackInfoByBlock */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";

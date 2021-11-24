@@ -796,6 +796,21 @@
 			path = RAC_Define;
 			sourceTree = "<group>";
 		};
+		842F7244274E2152000E2DAE /* NSObject+Category */ = {
+			isa = PBXGroup;
+			children = (
+				84B3BA46274D25A70005DF73 /* NSObject+Alert */,
+				84B3BA4D274D25A70005DF73 /* NSObject+Others */,
+				84B3BA66274D25A70005DF73 /* NSObject+DataSave */,
+				84B3BA69274D25A70005DF73 /* NSObject+Time */,
+				84B3BA6C274D25A70005DF73 /* NSObject+DataBinding */,
+				84B3BA6F274D25A70005DF73 /* NSObject (Time) */,
+				84B3BA75274D25A70005DF73 /* NSObject+DefConfig */,
+				84B3BA78274D25A70005DF73 /* NSObject+CallBackInfoByBlock */,
+			);
+			path = "NSObject+Category";
+			sourceTree = "<group>";
+		};
 		845892352744BB4800119697 /* 其他 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2148,15 +2163,8 @@
 		84B3BA45274D25A70005DF73 /* NSObject */ = {
 			isa = PBXGroup;
 			children = (
-				84B3BA46274D25A70005DF73 /* NSObject+Alert */,
-				84B3BA4D274D25A70005DF73 /* NSObject+Others */,
-				84B3BA66274D25A70005DF73 /* NSObject+DataSave */,
-				84B3BA69274D25A70005DF73 /* NSObject+Time */,
-				84B3BA6C274D25A70005DF73 /* NSObject+DataBinding */,
-				84B3BA6F274D25A70005DF73 /* NSObject (Time) */,
+				842F7244274E2152000E2DAE /* NSObject+Category */,
 				84B3BA72274D25A70005DF73 /* DDRecord */,
-				84B3BA75274D25A70005DF73 /* NSObject+DefConfig */,
-				84B3BA78274D25A70005DF73 /* NSObject+CallBackInfoByBlock */,
 			);
 			path = NSObject;
 			sourceTree = "<group>";
