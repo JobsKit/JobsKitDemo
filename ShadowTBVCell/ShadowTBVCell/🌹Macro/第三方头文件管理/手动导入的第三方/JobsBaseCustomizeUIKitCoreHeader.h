@@ -158,8 +158,8 @@
 
 #pragma mark —— UITableViewHeaderFooterView
 /// BaseTableViewHeaderFooterView
-#import "TableViewFooterView.h"
-#import "TableViewHeaderView.h"
+#import "BaseTableViewFooterView.h"
+#import "BaseTableViewHeaderView.h"
 
 #pragma mark —— UITextField
 /// BaseTextField

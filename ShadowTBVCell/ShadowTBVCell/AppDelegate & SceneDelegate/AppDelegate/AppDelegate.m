@@ -17,22 +17,25 @@
 
 @implementation AppDelegate
 
+static AppDelegate *static_appDelegate = nil;
++(instancetype)sharedInstance{
+    @synchronized(self){
+        if (!static_appDelegate) {
+            static_appDelegate = AppDelegate.new;
+        }
+    }return static_appDelegate;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     return YES;
 }
-
-
 #pragma mark - UISceneSession lifecycle
-
-
 - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
     // Called when a new scene session is being created.
     // Use this method to select a configuration to create the new scene with.
     return [[UISceneConfiguration alloc] initWithName:@"Default Configuration" sessionRole:connectingSceneSession.role];
 }
-
 
 - (void)application:(UIApplication *)application didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
     // Called when the user discards a scene session.
@@ -40,11 +43,8 @@
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
 
-
 #pragma mark - Core Data stack
-
 @synthesize persistentContainer = _persistentContainer;
-
 - (NSPersistentCloudKitContainer *)persistentContainer {
     // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
     @synchronized (self) {
@@ -68,13 +68,9 @@
                 }
             }];
         }
-    }
-    
-    return _persistentContainer;
+    }return _persistentContainer;
 }
-
 #pragma mark - Core Data Saving support
-
 - (void)saveContext {
     NSManagedObjectContext *context = self.persistentContainer.viewContext;
     NSError *error = nil;

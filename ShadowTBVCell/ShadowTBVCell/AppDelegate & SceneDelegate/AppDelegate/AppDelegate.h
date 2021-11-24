@@ -14,9 +14,10 @@
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (readonly, strong) NSPersistentCloudKitContainer *persistentContainer;
+@property(readonly,strong)NSPersistentCloudKitContainer *persistentContainer;
 
-- (void)saveContext;
+-(void)saveContext;
++(instancetype)sharedInstance;
 
 @end
 

@@ -2,8 +2,8 @@
 # platform :ios, '9.0'
 
 # 下面两行是指明依赖库的来源地址
-source 'https://github.com/CocoaPods/Specs.git'# 使用官方默认地址（默认）
-source 'https://github.com/Artsy/Specs.git'# 使用其他来源地址
+# source 'https://github.com/CocoaPods/Specs.git'# 使用官方默认地址（默认）
+# source 'https://github.com/Artsy/Specs.git'# 使用其他来源地址
 
 # install! 只走一次，多次使用只以最后一个标准执行
 # deterministic_uuids 解决与私有库的冲突
@@ -36,7 +36,7 @@ def func
   pod 'GKPhotoBrowser' # https://github.com/QuintGao/GKPhotoBrowser iOS仿微信、今日头条等图片浏览器 
   pod 'JXCategoryView'
   pod 'JXPagingView/Pager' # https://github.com/pujiaxin33/JXPagingView NO_SMP
-  pod 'YYKit'
+  pod 'YYImage'
   pod 'SDWebImage'  # https://github.com/SDWebImage/SDWebImage Asynchronous image downloader with cache support as a UIImageView category
 #  pod 'SDWebImage/WebP' # https://github.com/SDWebImage/SDWebImageWebPCoder A WebP coder plugin for SDWebImage, use libwebp
   pod 'LYEmptyView' # https://github.com/dev-liyang/LYEmptyView iOS一行代码集成空白页面占位图(无数据、无网络占位图)

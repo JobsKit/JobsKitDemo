@@ -8,6 +8,60 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+//
+//#pragma mark —— 系统SDK
+//#import <Foundation/Foundation.h>
+//#import <UIKit/UIKit.h>
+//#import <objc/runtime.h>
+//#import <CoreTelephony/CTTelephonyNetworkInfo.h>
+//#import <CoreTelephony/CTCarrier.h>
+//#import <QuartzCore/QuartzCore.h>
+//#import <VideoToolbox/VideoToolbox.h>//FFmpeg 需要
+//#import <CoreData/CoreData.h>
+//#import <Photos/Photos.h>
+//
+//#pragma mark —— 各项全局定义
+//#if __has_include(<ReactiveObjC/RACmetamacros.h>)
+//#import <ReactiveObjC/RACmetamacros.h>
+//#else
+//#import "RACmetamacros.h"
+//#endif
+//
+//#if __has_include(<ReactiveObjC/RACEXTScope.h>)
+//#import <ReactiveObjC/RACEXTScope.h>
+//#else
+//#import "RACEXTScope.h"
+//#endif
+//
+//#if __has_include(<ReactiveObjC/RACEXTKeyPathCoding.h>)
+//#import <ReactiveObjC/RACEXTKeyPathCoding.h>
+//#else
+//#import "RACEXTKeyPathCoding.h"
+//#endif
+//
+////#if __has_include(<ReactiveObjC/RACEXTRuntimeExtensions.h>)
+////#import <ReactiveObjC/RACEXTRuntimeExtensions.h>
+////#else
+////#import "RACEXTRuntimeExtensions.h"
+////#endif
+///// 各项宏定义
+//#import "MacroDef.h"
+///// NotificationManager
+//
+///// 其他的一些全局定义文件
+//#import "AABlock.h"
+//
+//
+//
+//#pragma mark —— 第三方头文件管理
+//#import "Pods.h"
+//#import "PodsManual.h"
+//#import "Manual_Add_ThirdParty.h"
+//
+//#pragma mark —— 其他杂项
+//#import "Other.h"
+
+///////////
 
 #pragma mark —— 系统SDK
 #import <Foundation/Foundation.h>
@@ -21,19 +75,51 @@
 #import <Photos/Photos.h>
 
 #pragma mark —— 各项全局定义
-/// 各项宏定义
-#import "MacroDef.h"
-/// NotificationManager
+#if __has_include(<ReactiveObjC/RACmetamacros.h>)
+#import <ReactiveObjC/RACmetamacros.h>
+#else
+#import "RACmetamacros.h"
+#endif
 
-/// 其他的一些全局定义文件
+#if __has_include(<ReactiveObjC/RACEXTScope.h>)
+#import <ReactiveObjC/RACEXTScope.h>
+#else
+#import "RACEXTScope.h"
+#endif
+
+#if __has_include(<ReactiveObjC/RACEXTKeyPathCoding.h>)
+#import <ReactiveObjC/RACEXTKeyPathCoding.h>
+#else
+#import "RACEXTKeyPathCoding.h"
+#endif
+
+//#if __has_include(<ReactiveObjC/RACEXTRuntimeExtensions.h>)
+//#import <ReactiveObjC/RACEXTRuntimeExtensions.h>
+//#else
+//#import "RACEXTRuntimeExtensions.h"
+//#endif
+/// NotificationManager
+#import "NotificationManager.h"
+/// 各项宏定义
+#import "MacroDef_App.h"
+#import "MacroDef_Cor.h"
+#import "MacroDef_Size.h"
+#import "MacroDef_Func.h"
+#import "MacroDef_Sys.h"
+///  其他的一些全局定义文件
 #import "AABlock.h"
+#import "APIKey.h"
+#import "DefineStructure.h"
 
 #pragma mark —— Swift-OC桥接头文件
 #import "ShadowTBVCell-Bridging-Header.h"
 
 #pragma mark —— 第三方头文件管理
-#import "PodsHeader.h"
-#import "Manual_Add_ThirdParty.h"
+/// 手动导入的第三方
+#import "Manual_Add_ThirdParty.h"// 完全的手动集成的第三方
+/// Pods
+#import "Pods.h"
+#import "PodsManual.h" 本来应该是pods管理，但是因为种种原因只能手动集成的第三方
 
 #pragma mark —— 其他杂项
 #import "Other.h"
