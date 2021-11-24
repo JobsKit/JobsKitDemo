@@ -94,13 +94,13 @@
 }
 
 -(void)saveDoc{
-    @weakify(self)
+    @jobs_weakify(self)
     hx_showAlert(self,
                  @"将此次编辑保留?",
                  nil,
                  @"不保留",
                  @"保留", ^{
-        @strongify(self)
+        @jobs_strongify(self)
         //不保留
         [self.photoManager deleteLocalModelsInFile];
         [self back:nil];

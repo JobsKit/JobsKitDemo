@@ -237,7 +237,7 @@
 }
 
 -(id)target{
-    @weakify(self)
+    @jobs_weakify(self)
     if (!_target) {
         _target = weak_self;
     }return _target;

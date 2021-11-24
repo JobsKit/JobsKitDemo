@@ -109,12 +109,12 @@
 #pragma mark —— lazyLoad
 -(CustomerAVPlayerView *)AVPlayerView{
     if (!_AVPlayerView) {
-        @weakify(self)
+        @jobs_weakify(self)
         _AVPlayerView = [[CustomerAVPlayerView alloc] initWithURL:self.AVPlayerURL
                                                         suspendVC:weak_self];
 //        _AVPlayerView.isSuspend = YES;//开启悬浮窗效果
         [_AVPlayerView errorCustomerAVPlayerBlock:^{
-            @strongify(self)
+            @jobs_strongify(self)
             [WHToast toastErrMsg:@"软件内部错误 : 因为某种未知的原因，找不到播放的资源文件"];
         }];
         ///点击事件回调 参数1：self CustomerAVPlayerView，参数2：手势 UITapGestureRecognizer & UISwipeGestureRecognizer

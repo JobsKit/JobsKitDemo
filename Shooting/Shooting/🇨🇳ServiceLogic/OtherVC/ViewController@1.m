@@ -34,7 +34,7 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches
           withEvent:(UIEvent *)event{
-    @weakify(self)
+//    @jobs_weakify(self)
 //    [DoorVC ComingFromVC:weak_self
 //             comingStyle:ComingStyle_PUSH
 //       presentationStyle:UIModalPresentationFullScreen

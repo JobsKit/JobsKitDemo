@@ -361,7 +361,7 @@ static char *ShootingAppDelegate_Func_bitsMonitorSuspendLab = "ShootingAppDelega
         BitsMonitorSuspendLab.font = [UIFont systemFontOfSize:10 weight:UIFontWeightBold];
         BitsMonitorSuspendLab.backgroundColor = KLightGrayColor;
         BitsMonitorSuspendLab.textColor = kRedColor;
-        @weakify(self)
+        @jobs_weakify(self)
         BitsMonitorSuspendLab.vc = weak_self.tabBarVC;
         BitsMonitorSuspendLab.isAllowDrag = YES;//悬浮效果必须要的参数
         [self.tabBarVC.view addSubview:BitsMonitorSuspendLab];

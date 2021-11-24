@@ -354,14 +354,14 @@
 -(GPUImageTools *)gpuImageTools{
     if (!_gpuImageTools) {
         _gpuImageTools = GPUImageTools.new;
-        @weakify(self)
+        @jobs_weakify(self)
         //点击事件
         [_gpuImageTools actionVedioToolsClickBlock:^(id data) {
             @strongify(self)
             if ([data isKindOfClass:MKGPUImageView.class]) {//鉴权部分
                   MKDataBlock block = ^(NSString *title){
                       NSLog(@"打开失败");
-                      @strongify(self)
+                      @jobs_strongify(self)
                       
                       SYSAlertControllerConfig *config = SYSAlertControllerConfig.new;
                       config.title = @"主人，写点什么吧~~~";
@@ -448,7 +448,7 @@
         
         //视频合并处理结束
         [_gpuImageTools vedioToolsSessionStatusCompletedBlock:^(id data) {
-            @strongify(self)
+            @jobs_strongify(self)
             if ([data isKindOfClass:GPUImageTools.class]) {
                 {
 //                    GPUImageTools *tools = (GPUImageTools *)data;
@@ -705,13 +705,13 @@
 
 -(CustomerAVPlayerView *)AVPlayerView{
     if (!_AVPlayerView) {
-        @weakify(self)
+        @jobs_weakify(self)
         if (![NSString isNullString:self.gpuImageTools.compressedVedioPathStr]) {
             _AVPlayerView = [[CustomerAVPlayerView alloc] initWithURL:[NSURL fileURLWithPath:self.gpuImageTools.compressedVedioPathStr]
                                                             suspendVC:weak_self];
             _AVPlayerView.isSuspend = YES;//开启悬浮窗效果
             [_AVPlayerView errorCustomerAVPlayerBlock:^{
-                @strongify(self)
+                @jobs_strongify(self)
                 [WHToast toastErrMsg:@"软件内部错误 : 因为某种未知的原因，找不到播放的资源文件"];
             }];
             ///点击事件回调 参数1：self CustomerAVPlayerView，参数2：手势 UITapGestureRecognizer & UISwipeGestureRecognizer
