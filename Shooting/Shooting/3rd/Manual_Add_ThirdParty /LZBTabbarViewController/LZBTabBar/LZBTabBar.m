@@ -22,7 +22,6 @@
 
 @property(nonatomic,assign)CGFloat itemWidth;
 @property(nonatomic,assign)BOOL isAnimation;
-@property(nonatomic,assign)BOOL isOK;
 
 @end
 
@@ -40,11 +39,11 @@
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-
-    if (!self.isOK) {
+    
+    static dispatch_once_t dispatchOnce;
+    dispatch_once(&dispatchOnce, ^{
         [self setupUI];
-        self.isOK = YES;
-    }
+    });
     
     [self layoutIfNeeded];
 }

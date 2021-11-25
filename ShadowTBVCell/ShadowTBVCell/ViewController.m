@@ -54,8 +54,8 @@ heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
 - (void)tableView:(UITableView *)tableView
 didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    WeakSelf
-    PushToVCViewController *vc = [PushToVCViewController ComingFromVC:weakSelf
+    @jobs_weakify(self)
+    PushToVCViewController *vc = [PushToVCViewController ComingFromVC:weak_self
                                                           comingStyle:ComingStyle_PUSH
                                                     presentationStyle:UIModalPresentationAutomatic
                                                         requestParams:[UIImage imageNamed:[NSString stringWithFormat:@"%ld.jpeg",indexPath.row]]

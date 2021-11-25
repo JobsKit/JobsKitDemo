@@ -10,7 +10,6 @@
 
 @interface GifLoopPlayView ()
 
-@property(nonatomic,assign)BOOL isOK;
 @property(nonatomic,strong)UIImageView *imageView;
 
 @end
@@ -25,11 +24,12 @@
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    if (!self.isOK) {
+
+    static dispatch_once_t dispatchOnce;
+    dispatch_once(&dispatchOnce, ^{
         self.imageView.alpha = 1;
         self.stopped = NO;// YES: 没有播放，NO：正在播放
-        self.isOK = YES;
-    }
+    });
 }
 //  YES - 停止；NO - 播放
 -(void)setStopped:(BOOL)stopped{
