@@ -27,24 +27,22 @@
 
 @implementation LZBTabBar
 
+static dispatch_once_t dispatchOnce;
 - (void)dealloc {
     NSLog(@"Running self.class = %@;NSStringFromSelector(_cmd) = '%@';__FUNCTION__ = %s", self.class, NSStringFromSelector(_cmd),__FUNCTION__);
 }
 
 - (instancetype)init{
     if (self = [super init]) {
-  
+        dispatchOnce = 0;
     }return self;
 }
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-    
-    static dispatch_once_t dispatchOnce;
     dispatch_once(&dispatchOnce, ^{
         [self setupUI];
     });
-    
     [self layoutIfNeeded];
 }
 

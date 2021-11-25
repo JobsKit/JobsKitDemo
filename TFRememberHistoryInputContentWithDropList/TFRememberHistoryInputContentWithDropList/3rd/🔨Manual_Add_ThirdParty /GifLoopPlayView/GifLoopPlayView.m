@@ -16,16 +16,16 @@
 
 @implementation GifLoopPlayView
 
+static dispatch_once_t dispatchOnce;
 -(instancetype)init{
     if (self = [super init]) {
         self.backgroundColor = [UIColor clearColor];
+        dispatchOnce = 0;
     }return self;
 }
 
 -(void)drawRect:(CGRect)rect{
     [super drawRect:rect];
-
-    static dispatch_once_t dispatchOnce;
     dispatch_once(&dispatchOnce, ^{
         self.imageView.alpha = 1;
         self.stopped = NO;// YES: 没有播放，NO：正在播放
