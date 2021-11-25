@@ -16,6 +16,14 @@ static char *ShootingAppDelegate_Func_bitsMonitorSuspendLab = "ShootingAppDelega
 -(void)reachabilityChanged:(NSNotification *)notify{
     
 }
+#pragma mark —— 读取Plist配置文件
+-(void)readPlistConfig{
+    static dispatch_once_t dispatchOnce;
+    dispatch_once(&dispatchOnce, ^{
+        id plistConfig = [self readLocalPlistWithFileName:@"MetaData"];
+        NSLog(@"plistConfig = %@",plistConfig);
+    });
+}
 #pragma mark —— 全局配置 TABAnimated
 -(void)makeTABAnimatedConfigure{
     [[TABAnimated sharedAnimated] initWithOnlySkeleton];

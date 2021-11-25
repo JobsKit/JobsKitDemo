@@ -50,6 +50,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic,strong)JobsBitsMonitorSuspendLab *bitsMonitorSuspendLab;
 
+#pragma mark —— 读取Plist配置文件
+-(void)readPlistConfig;
 #pragma mark —— 全局配置 TABAnimated
 -(void)makeTABAnimatedConfigure;
 #pragma mark —— 全局配置键盘
