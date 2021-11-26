@@ -10,15 +10,22 @@
 		04D95D96BA60F1754B14E88F /* Pods_TFRememberHistoryInputContentWithDropListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DB8C0515F68DEF81FA38454 /* Pods_TFRememberHistoryInputContentWithDropListTests.framework */; };
 		1E33276FD6C4B4B09E2F0263 /* Pods_TFRememberHistoryInputContentWithDropList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBF93F5131F2D3D18888125C /* Pods_TFRememberHistoryInputContentWithDropList.framework */; };
 		84037EDB274CC4C500D9079E /* RACEXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84037ED5274CC4C500D9079E /* RACEXTRuntimeExtensions.m */; };
-		8458927B2744BBB800119697 /* Bank.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845892712744BBB800119697 /* Bank.xcassets */; };
-		8458927C2744BBB800119697 /* Message.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845892722744BBB800119697 /* Message.xcassets */; };
-		8458927D2744BBB800119697 /* Agency.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845892732744BBB800119697 /* Agency.xcassets */; };
-		8458927F2744BBB800119697 /* Login.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845892752744BBB800119697 /* Login.xcassets */; };
-		845892802744BBB800119697 /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845892762744BBB800119697 /* Home.xcassets */; };
-		845892812744BBB800119697 /* Chip.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845892772744BBB800119697 /* Chip.xcassets */; };
-		845892822744BBB800119697 /* UserInfo.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845892782744BBB800119697 /* UserInfo.xcassets */; };
-		845892832744BBB800119697 /* Tabbar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845892792744BBB800119697 /* Tabbar.xcassets */; };
-		845892842744BBB800119697 /* Customer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8458927A2744BBB800119697 /* Customer.xcassets */; };
+		846AFF1D2750D4380091554A /* iph_X.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF012750D4330091554A /* iph_X.mp4 */; };
+		846AFF1E2750D4380091554A /* 非iph_X.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF022750D4330091554A /* 非iph_X.mp4 */; };
+		846AFF1F2750D4380091554A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF042750D4340091554A /* Localizable.strings */; };
+		846AFF202750D4380091554A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF062750D4340091554A /* InfoPlist.strings */; };
+		846AFF212750D4380091554A /* Bank.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF0F2750D4370091554A /* Bank.xcassets */; };
+		846AFF222750D4380091554A /* Message.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF102750D4370091554A /* Message.xcassets */; };
+		846AFF232750D4380091554A /* Agency.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF112750D4370091554A /* Agency.xcassets */; };
+		846AFF242750D4380091554A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF122750D4370091554A /* Assets.xcassets */; };
+		846AFF252750D4380091554A /* Home.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF132750D4370091554A /* Home.xcassets */; };
+		846AFF262750D4380091554A /* Chip.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF142750D4370091554A /* Chip.xcassets */; };
+		846AFF272750D4380091554A /* UserInfo.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF152750D4370091554A /* UserInfo.xcassets */; };
+		846AFF282750D4380091554A /* Tabbar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF162750D4370091554A /* Tabbar.xcassets */; };
+		846AFF292750D4380091554A /* Customer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF172750D4370091554A /* Customer.xcassets */; };
+		846AFF2A2750D4380091554A /* AppDoor.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF182750D4370091554A /* AppDoor.xcassets */; };
+		846AFF2B2750D4380091554A /* 刷新.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF1A2750D4370091554A /* 刷新.bundle */; };
+		846AFF2C2750D4380091554A /* Others.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 846AFF1B2750D4370091554A /* Others.bundle */; };
 		848A40422747911800D8F240 /* CLLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A403F2747911700D8F240 /* CLLanguageManager.m */; };
 		84B3BA99274D25A70005DF73 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B8FF274D25A60005DF73 /* UIImage+ScreenShot.m */; };
 		84B3BA9A274D25A70005DF73 /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3B902274D25A60005DF73 /* UIImage+Extras.m */; };
@@ -159,13 +166,11 @@
 		C534CE7E25875A60001369FD /* BWShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = C534CE7925875A60001369FD /* BWShareView.m */; };
 		C534CE7F25875A60001369FD /* BWItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C534CE7B25875A60001369FD /* BWItemCollectionViewCell.m */; };
 		C5542DD525F3251C002D1CA6 /* CheckMemFreeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5542DD425F3251C002D1CA6 /* CheckMemFreeVC.m */; };
-		C56E4207254717BC00B9F555 /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = C56E4206254717BC00B9F555 /* bundle */; };
 		C57D5B2A2513587A0073F90B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B292513587A0073F90B /* AppDelegate.m */; };
 		C57D5B2D2513587A0073F90B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B2C2513587A0073F90B /* SceneDelegate.m */; };
 		C57D5B302513587A0073F90B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B2F2513587A0073F90B /* ViewController.m */; };
 		C57D5B332513587A0073F90B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57D5B312513587A0073F90B /* Main.storyboard */; };
 		C57D5B362513587A0073F90B /* TFRememberHistoryInputContentWithDropList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B342513587A0073F90B /* TFRememberHistoryInputContentWithDropList.xcdatamodeld */; };
-		C57D5B382513587B0073F90B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C57D5B372513587B0073F90B /* Assets.xcassets */; };
 		C57D5B3B2513587B0073F90B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C57D5B392513587B0073F90B /* LaunchScreen.storyboard */; };
 		C57D5B3E2513587B0073F90B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B3D2513587B0073F90B /* main.m */; };
 		C57D5B482513587B0073F90B /* TFRememberHistoryInputContentWithDropListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C57D5B472513587B0073F90B /* TFRememberHistoryInputContentWithDropListTests.m */; };
@@ -280,15 +285,26 @@
 		84037ED7274CC4C500D9079E /* RACmetamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACmetamacros.h; sourceTree = "<group>"; };
 		84037ED8274CC4C500D9079E /* RACEXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACEXTRuntimeExtensions.h; sourceTree = "<group>"; };
 		84037ED9274CC4C500D9079E /* RACEXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACEXTKeyPathCoding.h; sourceTree = "<group>"; };
-		845892712744BBB800119697 /* Bank.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Bank.xcassets; sourceTree = "<group>"; };
-		845892722744BBB800119697 /* Message.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Message.xcassets; sourceTree = "<group>"; };
-		845892732744BBB800119697 /* Agency.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Agency.xcassets; sourceTree = "<group>"; };
-		845892752744BBB800119697 /* Login.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Login.xcassets; sourceTree = "<group>"; };
-		845892762744BBB800119697 /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
-		845892772744BBB800119697 /* Chip.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chip.xcassets; sourceTree = "<group>"; };
-		845892782744BBB800119697 /* UserInfo.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserInfo.xcassets; sourceTree = "<group>"; };
-		845892792744BBB800119697 /* Tabbar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tabbar.xcassets; sourceTree = "<group>"; };
-		8458927A2744BBB800119697 /* Customer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Customer.xcassets; sourceTree = "<group>"; };
+		846AFF012750D4330091554A /* iph_X.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = iph_X.mp4; sourceTree = "<group>"; };
+		846AFF022750D4330091554A /* 非iph_X.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "非iph_X.mp4"; sourceTree = "<group>"; };
+		846AFF052750D4340091554A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		846AFF072750D4340091554A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		846AFF082750D4340091554A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		846AFF092750D4340091554A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		846AFF0A2750D4340091554A /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		846AFF0B2750D4340091554A /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		846AFF0F2750D4370091554A /* Bank.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Bank.xcassets; sourceTree = "<group>"; };
+		846AFF102750D4370091554A /* Message.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Message.xcassets; sourceTree = "<group>"; };
+		846AFF112750D4370091554A /* Agency.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Agency.xcassets; sourceTree = "<group>"; };
+		846AFF122750D4370091554A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		846AFF132750D4370091554A /* Home.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Home.xcassets; sourceTree = "<group>"; };
+		846AFF142750D4370091554A /* Chip.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chip.xcassets; sourceTree = "<group>"; };
+		846AFF152750D4370091554A /* UserInfo.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserInfo.xcassets; sourceTree = "<group>"; };
+		846AFF162750D4370091554A /* Tabbar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Tabbar.xcassets; sourceTree = "<group>"; };
+		846AFF172750D4370091554A /* Customer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Customer.xcassets; sourceTree = "<group>"; };
+		846AFF182750D4370091554A /* AppDoor.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppDoor.xcassets; sourceTree = "<group>"; };
+		846AFF1A2750D4370091554A /* 刷新.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "刷新.bundle"; sourceTree = "<group>"; };
+		846AFF1B2750D4370091554A /* Others.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Others.bundle; sourceTree = "<group>"; };
 		848A40392747911700D8F240 /* App国际化.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "App国际化.md"; sourceTree = "<group>"; };
 		848A403B2747911700D8F240 /* AppInternationalizationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInternationalizationVC.m; sourceTree = "<group>"; };
 		848A403C2747911700D8F240 /* AppInternationalizationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInternationalizationVC.h; sourceTree = "<group>"; };
@@ -579,7 +595,6 @@
 		C558F450258A320D0078DB8F /* APIKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIKey.h; sourceTree = "<group>"; };
 		C558F451258A320D0078DB8F /* AABlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AABlock.h; sourceTree = "<group>"; };
 		C55E2B1D25FB28C600716A9B /* MacroDef_SysWarning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDef_SysWarning.h; sourceTree = "<group>"; };
-		C56E4206254717BC00B9F555 /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = "<group>"; };
 		C57D5B252513587A0073F90B /* TFRememberHistoryInputContentWithDropList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TFRememberHistoryInputContentWithDropList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C57D5B282513587A0073F90B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C57D5B292513587A0073F90B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -589,7 +604,6 @@
 		C57D5B2F2513587A0073F90B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C57D5B322513587A0073F90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C57D5B352513587A0073F90B /* TFRememberHistoryInputContentWithDropList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TFRememberHistoryInputContentWithDropList.xcdatamodel; sourceTree = "<group>"; };
-		C57D5B372513587B0073F90B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C57D5B3A2513587B0073F90B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C57D5B3C2513587B0073F90B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C57D5B3D2513587B0073F90B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -822,70 +836,91 @@
 			path = "其他";
 			sourceTree = "<group>";
 		};
-		845892362744BB7100119697 /* 图片资源文件 */ = {
+		84589A9C2744C13000119697 /* 资源文件管理 */ = {
 			isa = PBXGroup;
 			children = (
-				845892DD2744BC1A00119697 /* 进入编译期的资源 */,
-				C56E4206254717BC00B9F555 /* bundle */,
-				845892702744BBB800119697 /* xcassets */,
+				846AFF032750D4340091554A /* 国际化桥接数据 */,
+				846AFF002750D4330091554A /* 视频资源文件 */,
+				846AFF0C2750D4370091554A /* 图片资源文件 */,
+				846AFF1C2750D4380091554A /* 外部字体 */,
+				846AFEFF2750D4320091554A /* Json文件 */,
 			);
-			path = "图片资源文件";
+			path = "资源文件管理";
 			sourceTree = "<group>";
 		};
-		8458926F2744BB9800119697 /* 视频资源文件 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "视频资源文件";
-			sourceTree = "<group>";
-		};
-		845892702744BBB800119697 /* xcassets */ = {
-			isa = PBXGroup;
-			children = (
-				845892732744BBB800119697 /* Agency.xcassets */,
-				C57D5B372513587B0073F90B /* Assets.xcassets */,
-				845892712744BBB800119697 /* Bank.xcassets */,
-				845892772744BBB800119697 /* Chip.xcassets */,
-				8458927A2744BBB800119697 /* Customer.xcassets */,
-				845892762744BBB800119697 /* Home.xcassets */,
-				845892752744BBB800119697 /* Login.xcassets */,
-				845892722744BBB800119697 /* Message.xcassets */,
-				845892792744BBB800119697 /* Tabbar.xcassets */,
-				845892782744BBB800119697 /* UserInfo.xcassets */,
-			);
-			path = xcassets;
-			sourceTree = "<group>";
-		};
-		845892DB2744BC0400119697 /* 外部字体 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "外部字体";
-			sourceTree = "<group>";
-		};
-		845892DC2744BC1000119697 /* Json文件 */ = {
+		846AFEFF2750D4320091554A /* Json文件 */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = "Json文件";
 			sourceTree = "<group>";
 		};
-		845892DD2744BC1A00119697 /* 进入编译期的资源 */ = {
+		846AFF002750D4330091554A /* 视频资源文件 */ = {
+			isa = PBXGroup;
+			children = (
+				846AFF012750D4330091554A /* iph_X.mp4 */,
+				846AFF022750D4330091554A /* 非iph_X.mp4 */,
+			);
+			path = "视频资源文件";
+			sourceTree = "<group>";
+		};
+		846AFF032750D4340091554A /* 国际化桥接数据 */ = {
+			isa = PBXGroup;
+			children = (
+				846AFF042750D4340091554A /* Localizable.strings */,
+				846AFF062750D4340091554A /* InfoPlist.strings */,
+			);
+			path = "国际化桥接数据";
+			sourceTree = "<group>";
+		};
+		846AFF0C2750D4370091554A /* 图片资源文件 */ = {
+			isa = PBXGroup;
+			children = (
+				846AFF0D2750D4370091554A /* 进入编译期的资源 */,
+				846AFF0E2750D4370091554A /* xcassets */,
+				846AFF192750D4370091554A /* bundle */,
+			);
+			path = "图片资源文件";
+			sourceTree = "<group>";
+		};
+		846AFF0D2750D4370091554A /* 进入编译期的资源 */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = "进入编译期的资源";
 			sourceTree = "<group>";
 		};
-		84589A9C2744C13000119697 /* 资源文件管理 */ = {
+		846AFF0E2750D4370091554A /* xcassets */ = {
 			isa = PBXGroup;
 			children = (
-				845892DC2744BC1000119697 /* Json文件 */,
-				845892DB2744BC0400119697 /* 外部字体 */,
-				8458926F2744BB9800119697 /* 视频资源文件 */,
-				845892362744BB7100119697 /* 图片资源文件 */,
+				846AFF0F2750D4370091554A /* Bank.xcassets */,
+				846AFF102750D4370091554A /* Message.xcassets */,
+				846AFF112750D4370091554A /* Agency.xcassets */,
+				846AFF122750D4370091554A /* Assets.xcassets */,
+				846AFF132750D4370091554A /* Home.xcassets */,
+				846AFF142750D4370091554A /* Chip.xcassets */,
+				846AFF152750D4370091554A /* UserInfo.xcassets */,
+				846AFF162750D4370091554A /* Tabbar.xcassets */,
+				846AFF172750D4370091554A /* Customer.xcassets */,
+				846AFF182750D4370091554A /* AppDoor.xcassets */,
 			);
-			path = "资源文件管理";
+			path = xcassets;
+			sourceTree = "<group>";
+		};
+		846AFF192750D4370091554A /* bundle */ = {
+			isa = PBXGroup;
+			children = (
+				846AFF1A2750D4370091554A /* 刷新.bundle */,
+				846AFF1B2750D4370091554A /* Others.bundle */,
+			);
+			path = bundle;
+			sourceTree = "<group>";
+		};
+		846AFF1C2750D4380091554A /* 外部字体 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "外部字体";
 			sourceTree = "<group>";
 		};
 		848A40382747911700D8F240 /* App国际化 */ = {
@@ -3162,6 +3197,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"en-GB",
 			);
 			mainGroup = C57D5B1C2513587A0073F90B;
 			productRefGroup = C57D5B262513587A0073F90B /* Products */;
@@ -3180,8 +3217,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845892802744BBB800119697 /* Home.xcassets in Resources */,
 				84B3BADD274D25A70005DF73 /* 使用方法.md in Resources */,
+				846AFF202750D4380091554A /* InfoPlist.strings in Resources */,
+				846AFF252750D4380091554A /* Home.xcassets in Resources */,
 				C5C655AC259DF9FF00FD2F99 /* 相机@3x.png in Resources */,
 				C5C6559D259DF9FF00FD2F99 /* 提醒事项@2x.png in Resources */,
 				84B3BACC274D25A70005DF73 /* UITextView+IndicateWordLimit.png in Resources */,
@@ -3192,56 +3230,60 @@
 				C5C655AF259DF9FF00FD2F99 /* 定位服务@3x.png in Resources */,
 				C5C655A5259DF9FF00FD2F99 /* 通讯录@3x.png in Resources */,
 				C5C65597259DF9FF00FD2F99 /* 健康@2x.png in Resources */,
-				8458927D2744BBB800119697 /* Agency.xcassets in Resources */,
+				846AFF1E2750D4380091554A /* 非iph_X.mp4 in Resources */,
 				C5C655A2259DF9FF00FD2F99 /* 蓝牙@3x.png in Resources */,
 				84B3BAB2274D25A70005DF73 /* del_Photo@3x.png in Resources */,
 				C5C655A1259DF9FF00FD2F99 /* 蓝牙@2x.png in Resources */,
+				846AFF262750D4380091554A /* Chip.xcassets in Resources */,
 				C5C655A7259DF9FF00FD2F99 /* 文件和文件夹@2x.png in Resources */,
-				845892812744BBB800119697 /* Chip.xcassets in Resources */,
 				C5C655A4259DF9FF00FD2F99 /* 日历@2x.png in Resources */,
 				C5C65593259DF9FF00FD2F99 /* 媒体与AppleMusic@2x.png in Resources */,
 				84B3BAF5274D25A70005DF73 /* 专治UITableView相应链断裂.md in Resources */,
 				C57D5B3B2513587B0073F90B /* LaunchScreen.storyboard in Resources */,
-				845892842744BBB800119697 /* Customer.xcassets in Resources */,
+				846AFF292750D4380091554A /* Customer.xcassets in Resources */,
 				C5C655AB259DF9FF00FD2F99 /* 照片@3x.png in Resources */,
 				C5C655AE259DF9FF00FD2F99 /* 文件和文件夹@3x.png in Resources */,
-				C57D5B382513587B0073F90B /* Assets.xcassets in Resources */,
 				C5C6559E259DF9FF00FD2F99 /* 通讯录@2x.png in Resources */,
 				84B3BAAF274D25A70005DF73 /* Sound.wav in Resources */,
 				C5C655AD259DF9FF00FD2F99 /* HomeKit@3x.png in Resources */,
+				846AFF2A2750D4380091554A /* AppDoor.xcassets in Resources */,
 				C5C655A3259DF9FF00FD2F99 /* 语音识别@3x.png in Resources */,
+				846AFF222750D4380091554A /* Message.xcassets in Resources */,
 				C57D5B332513587A0073F90B /* Main.storyboard in Resources */,
-				845892822744BBB800119697 /* UserInfo.xcassets in Resources */,
-				8458927F2744BBB800119697 /* Login.xcassets in Resources */,
-				C56E4207254717BC00B9F555 /* bundle in Resources */,
 				C5D8D354260CC4CD00BDAF76 /* toastLoading.gif in Resources */,
+				846AFF272750D4380091554A /* UserInfo.xcassets in Resources */,
 				84B3BAE9274D25A70005DF73 /* JsonRes.bundle in Resources */,
 				84B3BAA3274D25A70005DF73 /* WhiteRightArrow@2x.png in Resources */,
-				8458927C2744BBB800119697 /* Message.xcassets in Resources */,
 				C5C65598259DF9FF00FD2F99 /* 提醒事项@3x.png in Resources */,
 				84B3BAAB274D25A70005DF73 /* RBCLikeButton.bundle in Resources */,
+				846AFF242750D4380091554A /* Assets.xcassets in Resources */,
 				84B3BAA8274D25A70005DF73 /* 高度自定义的按钮.md in Resources */,
 				C5C6559C259DF9FF00FD2F99 /* 麦克风@3x.png in Resources */,
 				C5C65595259DF9FF00FD2F99 /* 媒体与AppleMusic@3x.png in Resources */,
+				846AFF1F2750D4380091554A /* Localizable.strings in Resources */,
 				C50ECA4A25257E06000AE52F /* 音律跳动.bundle in Resources */,
 				C5C655A0259DF9FF00FD2F99 /* 语音识别@2x.png in Resources */,
+				846AFF212750D4380091554A /* Bank.xcassets in Resources */,
 				84B3BB00274D25A70005DF73 /* UICollectionViewFlowLayout.md in Resources */,
 				84B3BAB3274D25A70005DF73 /* del_Photo@2x.png in Resources */,
 				C5C655A9259DF9FF00FD2F99 /* 相机@2x.png in Resources */,
-				8458927B2744BBB800119697 /* Bank.xcassets in Resources */,
 				84B3BAF7274D25A70005DF73 /* iOS小技巧：用runtime 解决UIButton 重复点击问题.md in Resources */,
+				846AFF1D2750D4380091554A /* iph_X.mp4 in Resources */,
 				C5C6559F259DF9FF00FD2F99 /* 日历@3x.png in Resources */,
 				84B3BB1A274D25A80005DF73 /* ZYTextField.bundle in Resources */,
-				845892832744BBB800119697 /* Tabbar.xcassets in Resources */,
+				846AFF2B2750D4380091554A /* 刷新.bundle in Resources */,
 				84B3BAC9274D25A70005DF73 /* 移除 系统自带的 UITabBarButton in Resources */,
 				C5C6559B259DF9FF00FD2F99 /* 02.PNG in Resources */,
 				C5C655A6259DF9FF00FD2F99 /* 定位服务@2x.png in Resources */,
+				846AFF282750D4380091554A /* Tabbar.xcassets in Resources */,
 				84B3BACF274D25A70005DF73 /* 我为什么要这么做.md in Resources */,
 				84B3BAA4274D25A70005DF73 /* WhiteRightArrow@3x.png in Resources */,
+				846AFF232750D4380091554A /* Agency.xcassets in Resources */,
 				C5C65599259DF9FF00FD2F99 /* 01.PNG in Resources */,
 				84B3BACD274D25A70005DF73 /* iOS 获取手机型号、系统版本.png in Resources */,
 				C5C65592259DF9FF00FD2F99 /* 健康@3x.png in Resources */,
 				C5C65596259DF9FF00FD2F99 /* 运动与健身@3x.png in Resources */,
+				846AFF2C2750D4380091554A /* Others.bundle in Resources */,
 				C5C65594259DF9FF00FD2F99 /* 运动与健身@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3573,6 +3615,26 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		846AFF042750D4340091554A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846AFF052750D4340091554A /* zh-Hans */,
+				846AFF082750D4340091554A /* en */,
+				846AFF0A2750D4340091554A /* en-GB */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		846AFF062750D4340091554A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846AFF072750D4340091554A /* zh-Hans */,
+				846AFF092750D4340091554A /* en */,
+				846AFF0B2750D4340091554A /* en-GB */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		C57D5B312513587A0073F90B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

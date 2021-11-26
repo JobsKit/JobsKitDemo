@@ -16,6 +16,8 @@
 		840C7FE627451B0300356BBC /* ZBRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C7FDE27451B0300356BBC /* ZBRequestManager.m */; };
 		840C7FE727451B0300356BBC /* ZBURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C7FE127451B0300356BBC /* ZBURLRequest.m */; };
 		840C7FE827451B0300356BBC /* ZBCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C7FE227451B0300356BBC /* ZBCacheManager.m */; };
+		846AFEC52750D4080091554A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 846AFEBD2750D4080091554A /* Localizable.strings */; };
+		846AFEC62750D4080091554A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 846AFEBF2750D4080091554A /* InfoPlist.strings */; };
 		848A3D7B2747901400D8F240 /* CLLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A3D782747901400D8F240 /* CLLanguageManager.m */; };
 		84B3DE1F274D32330005DF73 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3DC85274D32320005DF73 /* UIImage+ScreenShot.m */; };
 		84B3DE20274D32330005DF73 /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3DC88274D32320005DF73 /* UIImage+Extras.m */; };
@@ -493,6 +495,12 @@
 		84588DCF2743F5BD00119697 /* Agency.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Agency.xcassets; sourceTree = "<group>"; };
 		84588DD02743F5BD00119697 /* UserInfo.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = UserInfo.xcassets; sourceTree = "<group>"; };
 		84588DD12743F5BD00119697 /* Chip.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Chip.xcassets; sourceTree = "<group>"; };
+		846AFEBE2750D4080091554A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		846AFEC02750D4080091554A /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		846AFEC12750D4080091554A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		846AFEC22750D4080091554A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		846AFEC32750D4080091554A /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		846AFEC42750D4080091554A /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		848A3D722747901400D8F240 /* App国际化.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "App国际化.md"; sourceTree = "<group>"; };
 		848A3D742747901400D8F240 /* AppInternationalizationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInternationalizationVC.m; sourceTree = "<group>"; };
 		848A3D752747901400D8F240 /* AppInternationalizationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInternationalizationVC.h; sourceTree = "<group>"; };
@@ -1448,6 +1456,15 @@
 			children = (
 			);
 			path = "Json文件";
+			sourceTree = "<group>";
+		};
+		846AFEBC2750D4080091554A /* 国际化桥接数据 */ = {
+			isa = PBXGroup;
+			children = (
+				846AFEBD2750D4080091554A /* Localizable.strings */,
+				846AFEBF2750D4080091554A /* InfoPlist.strings */,
+			);
+			path = "国际化桥接数据";
 			sourceTree = "<group>";
 		};
 		848A3D712747901400D8F240 /* App国际化 */ = {
@@ -4569,10 +4586,11 @@
 		C5D7B0EA25A739BF00166E83 /* 资源文件管理 */ = {
 			isa = PBXGroup;
 			children = (
-				845897252744BF6E00119697 /* Json文件 */,
-				845897242744BF6800119697 /* 外部字体 */,
-				84588DC52743F48000119697 /* 图片资源文件 */,
+				846AFEBC2750D4080091554A /* 国际化桥接数据 */,
 				C5D7B0EE25A73A4B00166E83 /* 视频资源文件 */,
+				84588DC52743F48000119697 /* 图片资源文件 */,
+				845897242744BF6800119697 /* 外部字体 */,
+				845897252744BF6E00119697 /* Json文件 */,
 			);
 			path = "资源文件管理";
 			sourceTree = "<group>";
@@ -5376,6 +5394,8 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
+				"en-GB",
 			);
 			mainGroup = C58F000424EA36F800B6D09C;
 			productRefGroup = C58F000E24EA36F800B6D09C /* Products */;
@@ -5491,11 +5511,13 @@
 				C53D60CA255C20FC006C290D /* home_priase_animation.json in Resources */,
 				C58F002024EA36FA00B6D09C /* Assets.xcassets in Resources */,
 				C5C6540E259DF94500FD2F99 /* 健康@2x.png in Resources */,
+				846AFEC62750D4080091554A /* InfoPlist.strings in Resources */,
 				C58F001B24EA36F800B6D09C /* Main.storyboard in Resources */,
 				C53D60CF255C20FC006C290D /* dingdan.json in Resources */,
 				C53D60DD255C20FC006C290D /* record_change.json in Resources */,
 				C5C6540B259DF94500FD2F99 /* 运动与健身@2x.png in Resources */,
 				C5D7B1B525A73AF100166E83 /* DDCollectionViewCell_Style1.png in Resources */,
+				846AFEC52750D4080091554A /* Localizable.strings in Resources */,
 				C5D7B1B925A73AF100166E83 /* DDCollectionViewCell_Style3.png in Resources */,
 				C5C6541D259DF94500FD2F99 /* 定位服务@2x.png in Resources */,
 				C53D60DA255C20FC006C290D /* huiyuan.json in Resources */,
@@ -5976,6 +5998,26 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		846AFEBD2750D4080091554A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846AFEBE2750D4080091554A /* zh-Hans */,
+				846AFEC12750D4080091554A /* en */,
+				846AFEC32750D4080091554A /* en-GB */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		846AFEBF2750D4080091554A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				846AFEC02750D4080091554A /* zh-Hans */,
+				846AFEC22750D4080091554A /* en */,
+				846AFEC42750D4080091554A /* en-GB */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		C58F001924EA36F800B6D09C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
