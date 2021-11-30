@@ -57,7 +57,7 @@
 #import "NSObject+CallBackInfoByBlock.h"
 
 #pragma mark —— NSString
-#import "NSString+Extras.h"
+#import "NSStringExtras.h"
 
 #pragma mark —— RedefineSys
 #import "DeleteSystemUITabBarButton.h"

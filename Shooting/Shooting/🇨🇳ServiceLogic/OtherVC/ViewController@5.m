@@ -28,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = kRedColor;
-    [DataManager sharedInstance].tag = ReuseIdentifier;
+    DataManager.sharedInstance.tag = ReuseIdentifier;
     /**
      公共配置
      插件机制

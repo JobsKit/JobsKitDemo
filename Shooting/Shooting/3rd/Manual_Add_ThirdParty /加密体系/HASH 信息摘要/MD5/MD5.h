@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <CommonCrypto/CommonHMAC.h>
-#import "NSString+Extras.h"
+#import "NSStringExtras.h"
 #import "GTMBase64.h"
 
 /// MD5  信息摘要
