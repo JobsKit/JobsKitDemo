@@ -80,11 +80,6 @@
     //UI归位
     self.gradLayer.frame = CGRectZero;
 }
-///旋转 以适应不同方向的直线型进度条
--(void)setTransformRadians:(CGFloat)transformRadians{
-    [UIView setTransform:transformRadians
-                 forView:self];
-}
 
 -(void)hide{
     [NSTimerManager nsTimePause:self.nsTimerManager_color];

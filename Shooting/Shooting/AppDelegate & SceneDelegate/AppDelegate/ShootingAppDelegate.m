@@ -148,11 +148,10 @@ didDiscardSceneSessions:(NSSet<UISceneSession *> *)sceneSessions {
     }return _window;
 }
 
--(TabbarVC *)tabBarVC{
+-(JobsTabbarVC *)tabBarVC{
     if (!_tabBarVC) {
-        _tabBarVC = TabbarVC.new;
+        _tabBarVC = JobsTabbarVC.new;
 //        _tabBarVC.isOpenScrollTabbar = NO;
-        _tabBarVC.myTabBar.offsetHeight = 5;
         [_tabBarVC.childMutArr addObject:childViewController_customStyle(ViewController_1.new,
                                                                          @"直播",
                                                                          KBuddleIMG(@"资源文件", @"TabbaritemImage", nil, @"community_selected"),
