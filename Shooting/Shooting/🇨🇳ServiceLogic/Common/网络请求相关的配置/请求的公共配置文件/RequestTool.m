@@ -9,32 +9,47 @@
 #import "RequestTool.h"
 
 @implementation RequestTool
+
 /** 写在前面
- * 1、所有请求都需要在headers里面添加处理过的userAgent
- * 2、进app的时候，服务器会根据设备返回一个token，再请求其他接口的时候，需要将这个token做为Authorization键值对，加在请求的headers里面
+ *  1、所有请求都需要在headers里面添加处理过的userAgent
+ 
+    2、进app的时候，服务器会根据设备返回一个token，再请求其他接口的时候，需要将这个token做为Authorization键值对，加在请求的headers里面
  */
-+(void)setupPublicParameters{
++(void)setupPublicParameters:(RequestTool *)config{
 #pragma mark —— 公共配置
     /**
      基础配置
      需要在请求之前配置，设置后所有请求都会带上 此基础配置
      */
     NSMutableDictionary *parameters = NSMutableDictionary.dictionary;
-    NSString *timeString = [NSString stringWithFormat:@"%.2f",[NSDate.date timeIntervalSince1970]];
+    NSString *timeString = [NSString stringWithFormat:@"%.2f",NSDate.date.timeIntervalSince1970];
     parameters[@"timeString"] = timeString;//时间戳
 
     NSMutableDictionary *headers = NSMutableDictionary.dictionary;
-//    headers[@"Token"] = @"Token";
+    headers[@"token"] = @"Token";
+
+    switch (config.languageType) {
+        case HTTPRequestHeaderLanguageEn://英文
+            headers[@"language"] = @"en_US";
+            break;
+        case HTTPRequestHeaderLanguageCN://中文
+            headers[@"language"] = @"zh_CN";
+            break;
+        default:
+            break;
+    }
+    
 #pragma mark —— userAgent
     NSString *userAgent = [AFHTTPSessionManager.manager.requestSerializer valueForHTTPHeaderField:@"User-Agent"];
     if(![userAgent containsString:@",dv:"]) {
-        NSString *newUserAgent = [NSString stringWithFormat:@"%@,dv:%@",userAgent,[KeychainIDFA deviceID]];
-//        [AFHTTPSessionManager.manager.requestSerializer setValue:newuserAgent forHTTPHeaderField:@"User-Agent"];
-        headers[@"User-Agent"] = newUserAgent;
+//        NSString *newUserAgent = [NSString stringWithFormat:@"%@,dv:%@",userAgent,[KeychainIDFA deviceID]];
+////        [AFHTTPSessionManager.manager.requestSerializer setValue:newuserAgent forHTTPHeaderField:@"User-Agent"];
+//        headers[@"User-Agent"] = newUserAgent;
     }
-#pragma mark —— Authorization
-    if (![NSString isNullString:DDUserInfo.sharedInstance.userModel.token]) {
-        headers[@"Authorization"] = DDUserInfo.sharedInstance.userModel.token;
+#pragma mark —— Token
+    if (![NSString isNullString:@""]) {
+        [AFHTTPSessionManager.manager.requestSerializer setValue:@""
+                                              forHTTPHeaderField:@"Authorization"];
     }
     
     [ZBRequestManager setupBaseConfig:^(ZBConfig * _Nullable config) {
@@ -49,7 +64,7 @@
         //config.retryCount = 2;//请求失败 所有请求重新连接次数
         config.consoleLog = YES;//开log
         config.userInfo = @{@"info":@"ZBNetworking"};//请求的信息，可以用来注释和判断使用
-//        config.responseContentTypes = @[@"application/x-www-form-urlencoded"];//添加新的响应数据类型
+//        config.responseContentTypes = @[@"text/aaa",@"text/bbb"];//添加新的响应数据类型
         /**
          内部已存在的响应数据类型
          @"text/html",@"application/json",@"text/json", @"text/plain",@"text/javascript",@"text/xml",@"image/*",@"multipart/form-data",@"application/octet-stream",@"application/zip"
@@ -104,45 +119,24 @@
                                                     id  _Nullable responseObject,
                                                     NSError * _Nullable __autoreleasing * _Nullable error) {
         NSLog(@"成功回调 数据返回之前");
-        if ([request.userInfo[@"info"] isEqualToString:@"ViewController_1"]) {//分辨接口，预防个别接口的处理方式和大众不太一样
-            if ([responseObject isKindOfClass:NSDictionary.class]) {
-                NSDictionary *dataDic = (NSDictionary *)responseObject;
-                // 公共请求错误直接抛出
-                if ([dataDic[HTTPServiceResponseCodeKey] intValue] != HTTPResponseCodeSuccess) {
-                    [WHToast showErrorWithMessage:dataDic[HTTPServiceResponseMsgKey]
-                                         duration:2
-                                    finishHandler:^{
-                      
-                    }];
-                }
-            }
+        if ([responseObject isKindOfClass:NSDictionary.class]) {
+            NSDictionary *dataDic = (NSDictionary *)responseObject;
+            DDResponseModel *model = [DDResponseModel mj_objectWithKeyValues:dataDic];
+//            [request.userInfo[@"info"] isEqualToString:@"ViewController_1"]
+            return model;
+        }else{
+            return nil;
         }
-        return nil;
     }];
     //预处理 错误
     [ZBRequestManager setErrorProcessHandler:^(ZBURLRequest * _Nullable request,
                                                NSError * _Nullable error){
         if (error.code == NSURLErrorCancelled){
             NSLog(@"请求取消❌------------------");
-            [WHToast showErrorWithMessage:@"请求取消"
-                                 duration:2
-                            finishHandler:^{
-              
-            }];
         }else if (error.code == NSURLErrorTimedOut){
             NSLog(@"请求超时");
-            [WHToast showErrorWithMessage:@"请求超时"
-                                 duration:2
-                            finishHandler:^{
-              
-            }];
         }else{
             NSLog(@"请求失败");
-            [WHToast showErrorWithMessage:[@"请求失败:" stringByAppendingString:error.description]
-                                 duration:2
-                            finishHandler:^{
-              
-            }];
         }
     }];
 #pragma mark —— 证书设置
@@ -153,15 +147,15 @@
     NSString *name = @"";
     if (name.length > 0) {
         // 先导入证书
-        NSString *cerPath = [[NSBundle mainBundle] pathForResource:name ofType:@"cer"];//证书的路径
+        NSString *cerPath = [NSBundle.mainBundle pathForResource:name ofType:@"cer"];//证书的路径
         NSData *cerData = [NSData dataWithContentsOfFile:cerPath];
         AFSecurityPolicy *securityPolicy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
            // 如果需要验证自建证书(无效证书)，需要设置为YES，默认为NO;
         securityPolicy.allowInvalidCertificates = YES;
            // 是否需要验证域名，默认为YES;
         securityPolicy.validatesDomainName = NO;
-        securityPolicy.pinnedCertificates = [[NSSet alloc] initWithObjects:cerData, nil];
-        [ZBRequestEngine defaultEngine].securityPolicy = securityPolicy;
+        securityPolicy.pinnedCertificates = [NSSet.alloc initWithObjects:cerData, nil];
+        ZBRequestEngine.defaultEngine.securityPolicy = securityPolicy;
     }
 }
 

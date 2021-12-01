@@ -7,16 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NSObject+URLManager.h"
 #import "ZBNetworking.h"
 #import "DataManager.h"
 #import "NetworkingConstant.h"
-#import "KeychainIDFA.h"
+
+typedef NS_ENUM(NSUInteger, HTTPRequestHeaderLanguageType) {
+    HTTPRequestHeaderLanguageEn,//英文
+    HTTPRequestHeaderLanguageCN//中文
+};
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface RequestTool : NSObject
 
-+(void)setupPublicParameters;
+@property(nonatomic,assign)HTTPRequestHeaderLanguageType languageType;
+
++(void)setupPublicParameters:(RequestTool *)config;
 
 @end
 
