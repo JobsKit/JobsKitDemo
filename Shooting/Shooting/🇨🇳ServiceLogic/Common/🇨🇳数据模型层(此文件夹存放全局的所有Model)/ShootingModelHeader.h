@@ -10,6 +10,8 @@
 #define ShootingModelHeader_h
 
 #import "BaseModel.h"
+#import "DDUserModel.h"
+#import "DDResponseModel.h"
 #pragma mark —— 消息
 #import "DDCommentMsgModel.h"
 #import "DDFansMsgModel.h"

@@ -11,6 +11,11 @@
 		753F9E92BB7A55BD375ECB7E /* Pods_ShootingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8016B8E0CDF4853441CD98ED /* Pods_ShootingUITests.framework */; };
 		7F96368156DDD0B899DCFEA0 /* Pods_Shooting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD724946959B4E1AA5A4A323 /* Pods_Shooting.framework */; };
 		84037E9A274CC47F00D9079E /* RACEXTRuntimeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 84037E94274CC47F00D9079E /* RACEXTRuntimeExtensions.m */; };
+		8405F40B27588A2800A9682A /* NSObject+AppTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405F40527588A2800A9682A /* NSObject+AppTools.m */; };
+		8405F40C27588A2800A9682A /* 此类主要封装一些本App常用的、可以替换资源的函数调用或者是鉴权机制.md in Resources */ = {isa = PBXBuildFile; fileRef = 8405F40727588A2800A9682A /* 此类主要封装一些本App常用的、可以替换资源的函数调用或者是鉴权机制.md */; };
+		8405F40D27588A2800A9682A /* NSObject+UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405F40A27588A2800A9682A /* NSObject+UserInfo.m */; };
+		8405F9FE27588D5100A9682A /* DDUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405F9F927588D5100A9682A /* DDUserModel.m */; };
+		8405F9FF27588D5100A9682A /* DDResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8405F9FC27588D5100A9682A /* DDResponseModel.m */; };
 		840C7FE427451B0300356BBC /* ZBRequestEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C7FDC27451B0200356BBC /* ZBRequestEngine.m */; };
 		840C7FE527451B0300356BBC /* NSString+ZBUTF8Encoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C7FDD27451B0200356BBC /* NSString+ZBUTF8Encoding.m */; };
 		840C7FE627451B0300356BBC /* ZBRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 840C7FDE27451B0300356BBC /* ZBRequestManager.m */; };
@@ -70,6 +75,9 @@
 		844E529C27550ADF00A6EA94 /* UIViewController+Lottie.m in Sources */ = {isa = PBXBuildFile; fileRef = 844E529A27550ADF00A6EA94 /* UIViewController+Lottie.m */; };
 		846AFEC52750D4080091554A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 846AFEBD2750D4080091554A /* Localizable.strings */; };
 		846AFEC62750D4080091554A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 846AFEBF2750D4080091554A /* InfoPlist.strings */; };
+		847851412757A2650066CAD1 /* NSString+Path.m in Sources */ = {isa = PBXBuildFile; fileRef = 847851402757A2650066CAD1 /* NSString+Path.m */; };
+		8478622D275887460066CAD1 /* UserDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84786229275887460066CAD1 /* UserDefaultModel.m */; };
+		8478622E275887460066CAD1 /* NSUserDefaults+Manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8478622C275887460066CAD1 /* NSUserDefaults+Manager.m */; };
 		848A3D7B2747901400D8F240 /* CLLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 848A3D782747901400D8F240 /* CLLanguageManager.m */; };
 		84B3DE1F274D32330005DF73 /* UIImage+ScreenShot.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3DC85274D32320005DF73 /* UIImage+ScreenShot.m */; };
 		84B3DE20274D32330005DF73 /* UIImage+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B3DC88274D32320005DF73 /* UIImage+Extras.m */; };
@@ -239,7 +247,6 @@
 		C5361E262666A47D005D5168 /* URLManagerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5361E0D2666A47D005D5168 /* URLManagerModel.m */; };
 		C5361E272666A47D005D5168 /* NSObject+URLManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5361E102666A47D005D5168 /* NSObject+URLManager.m */; };
 		C53B182C24FFA336000019F2 /* 视频水印.gif in Resources */ = {isa = PBXBuildFile; fileRef = C53B182B24FFA336000019F2 /* 视频水印.gif */; };
-		C53CAF36261C4E3A00AC1891 /* NSObject+AppTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C53CAF33261C4E3900AC1891 /* NSObject+AppTools.m */; };
 		C53D60FE255C21EB006C290D /* ShootingAppDelegate+Func.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D60FD255C21EB006C290D /* ShootingAppDelegate+Func.m */; };
 		C53D6104255C21F7006C290D /* ShootingAppDelegate+PopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D6103255C21F7006C290D /* ShootingAppDelegate+PopupView.m */; };
 		C53D610A255C2205006C290D /* ShootingAppDelegate+XHLaunchAdDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C53D6109255C2205006C290D /* ShootingAppDelegate+XHLaunchAdDelegate.m */; };
@@ -252,7 +259,6 @@
 		C55497A724F38D9C0065510D /* AVFounationTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C55497A624F38D9C0065510D /* AVFounationTools.m */; };
 		C55497AA24F3A1F00065510D /* GPUImageTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C55497A924F3A1F00065510D /* GPUImageTools.m */; };
 		C55497B024F3AD990065510D /* MKGPUImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = C55497AE24F3AD990065510D /* MKGPUImageView.m */; };
-		C55FF33025B42C7200D8C30D /* DDUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FF32E25B42C7200D8C30D /* DDUserModel.m */; };
 		C561618B24EE4C98001CD851 /* StartOrPauseBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C561618824EE4C97001CD851 /* StartOrPauseBtn.m */; };
 		C561618C24EE4C98001CD851 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C561618924EE4C98001CD851 /* MyCell.m */; };
 		C561619724EE4CA9001CD851 /* MKUploadingVC+VM.m in Sources */ = {isa = PBXBuildFile; fileRef = C561619424EE4CA9001CD851 /* MKUploadingVC+VM.m */; };
@@ -289,8 +295,6 @@
 		C595D4EF258714AD002A4531 /* SuspendLab.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D4E8258714AD002A4531 /* SuspendLab.m */; };
 		C595D4F0258714AD002A4531 /* SuspendView.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D4EA258714AD002A4531 /* SuspendView.m */; };
 		C595D4F1258714AD002A4531 /* SuspendBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = C595D4ED258714AD002A4531 /* SuspendBtn.m */; };
-		C59A3E98258DD22E005F6260 /* UserDefaultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3E96258DD22E005F6260 /* UserDefaultModel.m */; };
-		C59A3E99258DD22E005F6260 /* UserDefaultManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C59A3E97258DD22E005F6260 /* UserDefaultManager.m */; };
 		C59D9AA724F8C79500A74CE9 /* video.gif in Resources */ = {isa = PBXBuildFile; fileRef = C59D9AA524F8C79500A74CE9 /* video.gif */; };
 		C59D9AA824F8C79500A74CE9 /* watermark.bmp in Resources */ = {isa = PBXBuildFile; fileRef = C59D9AA624F8C79500A74CE9 /* watermark.bmp */; };
 		C59D9AB324F8E8DC00A74CE9 /* MKShootVC+VM.m in Sources */ = {isa = PBXBuildFile; fileRef = C561618D24EE4C9F001CD851 /* MKShootVC+VM.m */; };
@@ -395,7 +399,6 @@
 		C5D7B21425A73B2500166E83 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D7B1D425A73B2400166E83 /* DataManager.m */; };
 		C5D7B22625A73B2500166E83 /* DDResponseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D7B20A25A73B2400166E83 /* DDResponseModel.m */; };
 		C5D7B22725A73B2500166E83 /* RequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D7B20E25A73B2400166E83 /* RequestTool.m */; };
-		C5D7B22825A73B2500166E83 /* DDUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D7B21025A73B2500166E83 /* DDUserInfo.m */; };
 		C5D7B26325A73B3B00166E83 /* DDFocusOnPeopleTBVCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D7B23025A73B3A00166E83 /* DDFocusOnPeopleTBVCell.m */; };
 		C5D7B26625A73B3B00166E83 /* DDFocusOnPeopleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D7B23425A73B3A00166E83 /* DDFocusOnPeopleVC.m */; };
 		C5D7B26725A73B3B00166E83 /* DDInvitationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D7B23725A73B3A00166E83 /* DDInvitationVC.m */; };
@@ -482,6 +485,15 @@
 		84037E96274CC47F00D9079E /* RACmetamacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACmetamacros.h; sourceTree = "<group>"; };
 		84037E97274CC47F00D9079E /* RACEXTRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACEXTRuntimeExtensions.h; sourceTree = "<group>"; };
 		84037E98274CC47F00D9079E /* RACEXTKeyPathCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACEXTKeyPathCoding.h; sourceTree = "<group>"; };
+		8405F40527588A2800A9682A /* NSObject+AppTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AppTools.m"; sourceTree = "<group>"; };
+		8405F40627588A2800A9682A /* NSObject+AppTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AppTools.h"; sourceTree = "<group>"; };
+		8405F40727588A2800A9682A /* 此类主要封装一些本App常用的、可以替换资源的函数调用或者是鉴权机制.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "此类主要封装一些本App常用的、可以替换资源的函数调用或者是鉴权机制.md"; sourceTree = "<group>"; };
+		8405F40927588A2800A9682A /* NSObject+UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+UserInfo.h"; sourceTree = "<group>"; };
+		8405F40A27588A2800A9682A /* NSObject+UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+UserInfo.m"; sourceTree = "<group>"; };
+		8405F9F927588D5100A9682A /* DDUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDUserModel.m; sourceTree = "<group>"; };
+		8405F9FA27588D5100A9682A /* DDUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDUserModel.h; sourceTree = "<group>"; };
+		8405F9FC27588D5100A9682A /* DDResponseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDResponseModel.m; sourceTree = "<group>"; };
+		8405F9FD27588D5100A9682A /* DDResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDResponseModel.h; sourceTree = "<group>"; };
 		840C7FD527451AFC00356BBC /* ZBNetworking.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = ZBNetworking.md; sourceTree = "<group>"; };
 		840C7FD627451AFC00356BBC /* NetworkingConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingConstant.h; sourceTree = "<group>"; };
 		840C7FD827451B0200356BBC /* ZBRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBRequestManager.h; sourceTree = "<group>"; };
@@ -588,6 +600,12 @@
 		846AFEC22750D4080091554A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		846AFEC32750D4080091554A /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		846AFEC42750D4080091554A /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		8478513F2757A2650066CAD1 /* NSString+Path.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Path.h"; sourceTree = "<group>"; };
+		847851402757A2650066CAD1 /* NSString+Path.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Path.m"; sourceTree = "<group>"; };
+		84786228275887460066CAD1 /* UserDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultModel.h; sourceTree = "<group>"; };
+		84786229275887460066CAD1 /* UserDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultModel.m; sourceTree = "<group>"; };
+		8478622B275887460066CAD1 /* NSUserDefaults+Manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Manager.h"; sourceTree = "<group>"; };
+		8478622C275887460066CAD1 /* NSUserDefaults+Manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Manager.m"; sourceTree = "<group>"; };
 		848A3D722747901400D8F240 /* App国际化.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "App国际化.md"; sourceTree = "<group>"; };
 		848A3D742747901400D8F240 /* AppInternationalizationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInternationalizationVC.m; sourceTree = "<group>"; };
 		848A3D752747901400D8F240 /* AppInternationalizationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInternationalizationVC.h; sourceTree = "<group>"; };
@@ -934,9 +952,6 @@
 		C5361E102666A47D005D5168 /* NSObject+URLManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+URLManager.m"; sourceTree = "<group>"; };
 		C5361E112666A47D005D5168 /* NSObject+URLManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+URLManager.h"; sourceTree = "<group>"; };
 		C53B182B24FFA336000019F2 /* 视频水印.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "视频水印.gif"; sourceTree = "<group>"; };
-		C53CAF33261C4E3900AC1891 /* NSObject+AppTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+AppTools.m"; sourceTree = "<group>"; };
-		C53CAF34261C4E3900AC1891 /* NSObject+AppTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+AppTools.h"; sourceTree = "<group>"; };
-		C53CAF35261C4E3900AC1891 /* 此类主要封装一些本App常用的、可以替换资源的函数调用或者是鉴权机制.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = "此类主要封装一些本App常用的、可以替换资源的函数调用或者是鉴权机制.md"; sourceTree = "<group>"; };
 		C53D60FC255C21EB006C290D /* ShootingAppDelegate+Func.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShootingAppDelegate+Func.h"; sourceTree = "<group>"; };
 		C53D60FD255C21EB006C290D /* ShootingAppDelegate+Func.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ShootingAppDelegate+Func.m"; sourceTree = "<group>"; };
 		C53D6102255C21F7006C290D /* ShootingAppDelegate+PopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShootingAppDelegate+PopupView.h"; sourceTree = "<group>"; };
@@ -969,8 +984,6 @@
 		C558014B258A3F3F0078DB8F /* XHLaunchAd不用pod导入的情况说明.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "XHLaunchAd不用pod导入的情况说明.md"; sourceTree = "<group>"; };
 		C558F345258A2F900078DB8F /* PodsManual.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PodsManual.h; sourceTree = "<group>"; };
 		C55E2AA925FB286200716A9B /* MacroDef_SysWarning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDef_SysWarning.h; sourceTree = "<group>"; };
-		C55FF32E25B42C7200D8C30D /* DDUserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDUserModel.m; sourceTree = "<group>"; };
-		C55FF32F25B42C7200D8C30D /* DDUserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDUserModel.h; sourceTree = "<group>"; };
 		C561618724EE4C97001CD851 /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
 		C561618824EE4C97001CD851 /* StartOrPauseBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartOrPauseBtn.m; sourceTree = "<group>"; };
 		C561618924EE4C98001CD851 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
@@ -1065,10 +1078,6 @@
 		C595D4EB258714AD002A4531 /* SuspendView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendView.h; sourceTree = "<group>"; };
 		C595D4ED258714AD002A4531 /* SuspendBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuspendBtn.m; sourceTree = "<group>"; };
 		C595D4EE258714AD002A4531 /* SuspendBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuspendBtn.h; sourceTree = "<group>"; };
-		C59A3E94258DD22E005F6260 /* UserDefaultManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultManager.h; sourceTree = "<group>"; };
-		C59A3E95258DD22E005F6260 /* UserDefaultModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultModel.h; sourceTree = "<group>"; };
-		C59A3E96258DD22E005F6260 /* UserDefaultModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultModel.m; sourceTree = "<group>"; };
-		C59A3E97258DD22E005F6260 /* UserDefaultManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultManager.m; sourceTree = "<group>"; };
 		C59D9AA524F8C79500A74CE9 /* video.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = video.gif; sourceTree = "<group>"; };
 		C59D9AA624F8C79500A74CE9 /* watermark.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = watermark.bmp; sourceTree = "<group>"; };
 		C59D9ACC24F8EF1100A74CE9 /* CustomerGPUImagePlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerGPUImagePlayerVC.m; sourceTree = "<group>"; };
@@ -1247,8 +1256,6 @@
 		C5D7B20B25A73B2400166E83 /* DDResponseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDResponseModel.h; sourceTree = "<group>"; };
 		C5D7B20D25A73B2400166E83 /* RequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestTool.h; sourceTree = "<group>"; };
 		C5D7B20E25A73B2400166E83 /* RequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestTool.m; sourceTree = "<group>"; };
-		C5D7B21025A73B2500166E83 /* DDUserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDUserInfo.m; sourceTree = "<group>"; };
-		C5D7B21125A73B2500166E83 /* DDUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDUserInfo.h; sourceTree = "<group>"; };
 		C5D7B23025A73B3A00166E83 /* DDFocusOnPeopleTBVCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFocusOnPeopleTBVCell.m; sourceTree = "<group>"; };
 		C5D7B23125A73B3A00166E83 /* 关注TA的人.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "关注TA的人.png"; sourceTree = "<group>"; };
 		C5D7B23225A73B3A00166E83 /* DDFocusOnPeopleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFocusOnPeopleVC.h; sourceTree = "<group>"; };
@@ -1411,6 +1418,52 @@
 				84037E96274CC47F00D9079E /* RACmetamacros.h */,
 			);
 			path = RAC_Define;
+			sourceTree = "<group>";
+		};
+		8405F40327588A2800A9682A /* AppTools */ = {
+			isa = PBXGroup;
+			children = (
+				8405F40427588A2800A9682A /* NSObject+AppTools */,
+				8405F40827588A2800A9682A /* NSObject+UserInfo */,
+			);
+			path = AppTools;
+			sourceTree = "<group>";
+		};
+		8405F40427588A2800A9682A /* NSObject+AppTools */ = {
+			isa = PBXGroup;
+			children = (
+				8405F40527588A2800A9682A /* NSObject+AppTools.m */,
+				8405F40627588A2800A9682A /* NSObject+AppTools.h */,
+				8405F40727588A2800A9682A /* 此类主要封装一些本App常用的、可以替换资源的函数调用或者是鉴权机制.md */,
+			);
+			path = "NSObject+AppTools";
+			sourceTree = "<group>";
+		};
+		8405F40827588A2800A9682A /* NSObject+UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				8405F40927588A2800A9682A /* NSObject+UserInfo.h */,
+				8405F40A27588A2800A9682A /* NSObject+UserInfo.m */,
+			);
+			path = "NSObject+UserInfo";
+			sourceTree = "<group>";
+		};
+		8405F9F827588D5100A9682A /* DDUserModel */ = {
+			isa = PBXGroup;
+			children = (
+				8405F9F927588D5100A9682A /* DDUserModel.m */,
+				8405F9FA27588D5100A9682A /* DDUserModel.h */,
+			);
+			path = DDUserModel;
+			sourceTree = "<group>";
+		};
+		8405F9FB27588D5100A9682A /* DDResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				8405F9FC27588D5100A9682A /* DDResponseModel.m */,
+				8405F9FD27588D5100A9682A /* DDResponseModel.h */,
+			);
+			path = DDResponseModel;
 			sourceTree = "<group>";
 		};
 		842F720B274E2139000E2DAE /* NSObject+Category */ = {
@@ -1778,6 +1831,42 @@
 			path = "国际化桥接数据";
 			sourceTree = "<group>";
 		};
+		8478513E2757A2650066CAD1 /* NSString+Path */ = {
+			isa = PBXGroup;
+			children = (
+				8478513F2757A2650066CAD1 /* NSString+Path.h */,
+				847851402757A2650066CAD1 /* NSString+Path.m */,
+			);
+			path = "NSString+Path";
+			sourceTree = "<group>";
+		};
+		84786226275887460066CAD1 /* NSUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				84786227275887460066CAD1 /* UserDefaultModel */,
+				8478622A275887460066CAD1 /* NSUserDefaults+Manager */,
+			);
+			path = NSUserDefaults;
+			sourceTree = "<group>";
+		};
+		84786227275887460066CAD1 /* UserDefaultModel */ = {
+			isa = PBXGroup;
+			children = (
+				84786228275887460066CAD1 /* UserDefaultModel.h */,
+				84786229275887460066CAD1 /* UserDefaultModel.m */,
+			);
+			path = UserDefaultModel;
+			sourceTree = "<group>";
+		};
+		8478622A275887460066CAD1 /* NSUserDefaults+Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8478622B275887460066CAD1 /* NSUserDefaults+Manager.h */,
+				8478622C275887460066CAD1 /* NSUserDefaults+Manager.m */,
+			);
+			path = "NSUserDefaults+Manager";
+			sourceTree = "<group>";
+		};
 		848A3D712747901400D8F240 /* App国际化 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1809,6 +1898,7 @@
 		84B3DC80274D32320005DF73 /* JobsBaseCustomizeUIKitCore */ = {
 			isa = PBXGroup;
 			children = (
+				84786226275887460066CAD1 /* NSUserDefaults */,
 				84B3DC81274D32320005DF73 /* UIImage */,
 				84B3DC96274D32320005DF73 /* UILabel */,
 				84B3DC9E274D32320005DF73 /* UITableViewCell */,
@@ -3258,15 +3348,16 @@
 			isa = PBXGroup;
 			children = (
 				84E6D82127565865002BB16E /* NSString+Conversion */,
-				84E6D82427565865002BB16E /* NSString+Others */,
-				84E6D82727565865002BB16E /* NSString+Eomji */,
-				84E6D82A27565865002BB16E /* NSString+JudgeNull */,
-				84E6D82D27565865002BB16E /* NSString+Statistics */,
 				84E6D83027565865002BB16E /* NSString+Decoration */,
-				84E6D83327565865002BB16E /* NSStringExtras.h */,
-				84E6D83427565865002BB16E /* NSString+Judgment */,
+				84E6D82727565865002BB16E /* NSString+Eomji */,
 				84E6D83727565865002BB16E /* NSString+FilteringSpecialCharacters */,
+				84E6D82A27565865002BB16E /* NSString+JudgeNull */,
+				84E6D83427565865002BB16E /* NSString+Judgment */,
+				84E6D82427565865002BB16E /* NSString+Others */,
+				8478513E2757A2650066CAD1 /* NSString+Path */,
 				84E6D83A27565865002BB16E /* NSString+Replace */,
+				84E6D82D27565865002BB16E /* NSString+Statistics */,
+				84E6D83327565865002BB16E /* NSStringExtras.h */,
 			);
 			path = "NSString+Category";
 			sourceTree = "<group>";
@@ -3754,16 +3845,6 @@
 				C5361E112666A47D005D5168 /* NSObject+URLManager.h */,
 			);
 			path = "NSObject+URLManager";
-			sourceTree = "<group>";
-		};
-		C53CAF32261C4E3900AC1891 /* NSObject+AppTools */ = {
-			isa = PBXGroup;
-			children = (
-				C53CAF35261C4E3900AC1891 /* 此类主要封装一些本App常用的、可以替换资源的函数调用或者是鉴权机制.md */,
-				C53CAF34261C4E3900AC1891 /* NSObject+AppTools.h */,
-				C53CAF33261C4E3900AC1891 /* NSObject+AppTools.m */,
-			);
-			path = "NSObject+AppTools";
 			sourceTree = "<group>";
 		};
 		C53D6087255C20FC006C290D /* 深度拓展系统UITabBar全家桶 */ = {
@@ -4310,7 +4391,6 @@
 				C58F02CB24EA62A800B6D09C /* Suspend */,
 				C5C67C9224FF5CFC000A26B8 /* TimerManager */,
 				C565CBBD25A4384800848134 /* TwoVerticalArrangementLabsView */,
-				C59A3E93258DD22E005F6260 /* UserDefaultManager */,
 			);
 			path = "Manual_Add_ThirdParty ";
 			sourceTree = "<group>";
@@ -4489,17 +4569,6 @@
 				C59D9AA624F8C79500A74CE9 /* watermark.bmp */,
 			);
 			path = res;
-			sourceTree = "<group>";
-		};
-		C59A3E93258DD22E005F6260 /* UserDefaultManager */ = {
-			isa = PBXGroup;
-			children = (
-				C59A3E94258DD22E005F6260 /* UserDefaultManager.h */,
-				C59A3E95258DD22E005F6260 /* UserDefaultModel.h */,
-				C59A3E96258DD22E005F6260 /* UserDefaultModel.m */,
-				C59A3E97258DD22E005F6260 /* UserDefaultManager.m */,
-			);
-			path = UserDefaultManager;
 			sourceTree = "<group>";
 		};
 		C59D9AB424F8EECB00A74CE9 /* 录制成功的视频进行预览播放以决定是否舍弃 */ = {
@@ -4804,11 +4873,10 @@
 		C5D7B0F625A73AD400166E83 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				8405F40327588A2800A9682A /* AppTools */,
 				C5D7B16A25A73AF000166E83 /* 🇨🇳数据模型层(此文件夹存放全局的所有Model) */,
 				C5D7B17E25A73AF000166E83 /* 广告或者公示弹出框 */,
 				C5D7B1CC25A73B2400166E83 /* 网络请求相关的配置 */,
-				C5D7B20F25A73B2500166E83 /* 用户信息 */,
-				C53CAF32261C4E3900AC1891 /* NSObject+AppTools */,
 				C5D7B18125A73AF100166E83 /* UICllectionView相关复用的模块 */,
 			);
 			path = Common;
@@ -4818,6 +4886,8 @@
 			isa = PBXGroup;
 			children = (
 				C526522625EF627000C8AB2B /* ShootingModelHeader.h */,
+				8405F9FB27588D5100A9682A /* DDResponseModel */,
+				8405F9F827588D5100A9682A /* DDUserModel */,
 				C526520925EF61F200C8AB2B /* BaseModel */,
 				C5D7B17425A73AF000166E83 /* 消息 */,
 				C5D7B16B25A73AF000166E83 /* SortVideo */,
@@ -5011,17 +5081,6 @@
 				C5D7B20E25A73B2400166E83 /* RequestTool.m */,
 			);
 			path = "请求的公共配置文件";
-			sourceTree = "<group>";
-		};
-		C5D7B20F25A73B2500166E83 /* 用户信息 */ = {
-			isa = PBXGroup;
-			children = (
-				C5D7B21125A73B2500166E83 /* DDUserInfo.h */,
-				C5D7B21025A73B2500166E83 /* DDUserInfo.m */,
-				C55FF32F25B42C7200D8C30D /* DDUserModel.h */,
-				C55FF32E25B42C7200D8C30D /* DDUserModel.m */,
-			);
-			path = "用户信息";
 			sourceTree = "<group>";
 		};
 		C5D7B22C25A73B3A00166E83 /* 广场 */ = {
@@ -5636,6 +5695,7 @@
 				844E4CC7275503D600A6EA94 /* record_change.json in Resources */,
 				C5D7B1C225A73AF100166E83 /* DDCollectionViewCell_Style2.png in Resources */,
 				C5F4522A2529A6D900066AAB /* DES in Resources */,
+				8405F40C27588A2800A9682A /* 此类主要封装一些本App常用的、可以替换资源的函数调用或者是鉴权机制.md in Resources */,
 				844E4CB6275503D600A6EA94 /* wode.json in Resources */,
 				C58F002324EA36FA00B6D09C /* LaunchScreen.storyboard in Resources */,
 				84B3DE63274D32330005DF73 /* 使用方法.md in Resources */,
@@ -5845,9 +5905,7 @@
 				84B3DE5A274D32330005DF73 /* BaseCollectionViewCell.m in Sources */,
 				844E4CCB275503D600A6EA94 /* UITabBar+Ex.m in Sources */,
 				C53D610A255C2205006C290D /* ShootingAppDelegate+XHLaunchAdDelegate.m in Sources */,
-				C5D7B22825A73B2500166E83 /* DDUserInfo.m in Sources */,
 				844E4CC9275503D600A6EA94 /* JobsTabbarVC.m in Sources */,
-				C59A3E98258DD22E005F6260 /* UserDefaultModel.m in Sources */,
 				C58F002624EA36FA00B6D09C /* main.m in Sources */,
 				C5D7B27425A73B3B00166E83 /* DDPostDelView.m in Sources */,
 				84B3DE72274D32330005DF73 /* BaseViewController.m in Sources */,
@@ -5882,6 +5940,7 @@
 				84B3DE25274D32330005DF73 /* UILabel+Extra.m in Sources */,
 				C5C65404259DF94500FD2F99 /* ECPrivacyCheckMediaAndAppleMusic.m in Sources */,
 				84B3DE4C274D32330005DF73 /* UIView+Extras.m in Sources */,
+				8405F9FE27588D5100A9682A /* DDUserModel.m in Sources */,
 				C5361E1A2666A47D005D5168 /* DDNetworkingAPI+LoginApi.m in Sources */,
 				C5D7B1AC25A73AF100166E83 /* DDRewardConfigModel.m in Sources */,
 				84B3DE97274D32330005DF73 /* TimeModel.m in Sources */,
@@ -5906,10 +5965,11 @@
 				C59D9AD724F8EF4100A74CE9 /* CustomerAVPlayerVC.m in Sources */,
 				C5361E192666A47D005D5168 /* DDNetworkingAPI+UserPostApi.m in Sources */,
 				C565CBC125A4384800848134 /* TwoVerticalArrangementLabsView.m in Sources */,
+				8405F40B27588A2800A9682A /* NSObject+AppTools.m in Sources */,
 				C52DEF51255D2A820016FF07 /* XHLaunchAd.m in Sources */,
 				C5F4522C2529A6D900066AAB /* NSData+Base64.m in Sources */,
+				847851412757A2650066CAD1 /* NSString+Path.m in Sources */,
 				C5D7B48E25A73E9500166E83 /* JXCategoryTitleBackgroundCell.m in Sources */,
-				C53CAF36261C4E3A00AC1891 /* NSObject+AppTools.m in Sources */,
 				84B3DE9E274D32330005DF73 /* CJTextField.m in Sources */,
 				C58F00EE24EA581F00B6D09C /* BaseGPUImageView.m in Sources */,
 				C5D7B48D25A73E9500166E83 /* JXCategoryTitleBackgroundCellModel.m in Sources */,
@@ -6024,10 +6084,12 @@
 				C561619E24EE4CB7001CD851 /* PhotoVC+VM.m in Sources */,
 				C5D7B27325A73B3B00166E83 /* DDPostInputView.m in Sources */,
 				84B3DE78274D32330005DF73 /* UITableView+Expand.m in Sources */,
+				8405F9FF27588D5100A9682A /* DDResponseModel.m in Sources */,
 				C5D7B1BA25A73AF100166E83 /* DDCollectionViewCell_Style2TBVCellModel.m in Sources */,
 				84E6D83F27565865002BB16E /* NSString+Eomji.m in Sources */,
 				C5D7B1B225A73AF100166E83 /* DDCommentMsgModel.m in Sources */,
 				C5D7B26C25A73B3B00166E83 /* DDUserDetailsCollectionReusableView.m in Sources */,
+				8478622D275887460066CAD1 /* UserDefaultModel.m in Sources */,
 				C5D7B26725A73B3B00166E83 /* DDInvitationVC.m in Sources */,
 				C5D7B4D325A740D500166E83 /* KeychainHelper.m in Sources */,
 				C589604F2500AC91002B1764 /* ImageCodeView.m in Sources */,
@@ -6051,7 +6113,6 @@
 				844E4CAE275503D600A6EA94 /* TransitionAnimation.m in Sources */,
 				C5542D7F25F324FB002D1CA6 /* CheckMemFreeVC.m in Sources */,
 				C5F4523C2529A6D900066AAB /* NSData+CommonCrypto.m in Sources */,
-				C55FF33025B42C7200D8C30D /* DDUserModel.m in Sources */,
 				C5361E152666A47D005D5168 /* DDNetworkingAPI+FeedBackApi.m in Sources */,
 				84E768C0274E08700014B4F0 /* UIViewController+TZImagePickerController.m in Sources */,
 				C53D6104255C21F7006C290D /* ShootingAppDelegate+PopupView.m in Sources */,
@@ -6063,6 +6124,7 @@
 				84B3DE5D274D32330005DF73 /* BaseNavigationBar.m in Sources */,
 				84B3DE54274D32330005DF73 /* UIDevice+XMUtils.m in Sources */,
 				C55497B024F3AD990065510D /* MKGPUImageView.m in Sources */,
+				8405F40D27588A2800A9682A /* NSObject+UserInfo.m in Sources */,
 				84B3DE68274D32330005DF73 /* UIViewController+Shake.m in Sources */,
 				84407FD22754A8C000B9926E /* RBCLikeButton.m in Sources */,
 				844E4CAC275503D600A6EA94 /* JobsPullListTBVCell.m in Sources */,
@@ -6082,6 +6144,7 @@
 				84B3DE88274D32330005DF73 /* CALayer+Anim.m in Sources */,
 				84B3DEA1274D32330005DF73 /* ZYTextField+HistoryDataList.m in Sources */,
 				84B3DE26274D32330005DF73 /* UILabel+Gesture.m in Sources */,
+				8478622E275887460066CAD1 /* NSUserDefaults+Manager.m in Sources */,
 				84B3DE58274D32330005DF73 /* UICollectionViewCell+ShakeAnimation.m in Sources */,
 				844E4CA8275503D600A6EA94 /* JobsTabBarItem.m in Sources */,
 				84B3DE80274D32330005DF73 /* UITableViewHeaderFooterView+BaseTableViewHeaderFooterViewProtocol.m in Sources */,
@@ -6112,7 +6175,6 @@
 				C5C65407259DF94500FD2F99 /* ECPrivacyCheckHealth.m in Sources */,
 				84B3DE79274D32330005DF73 /* UITableView+WWFoldableTableView.m in Sources */,
 				84B3DE62274D32330005DF73 /* UIViewController+XLBubbleTransition.m in Sources */,
-				C59A3E99258DD22E005F6260 /* UserDefaultManager.m in Sources */,
 				84B3DE3E274D32330005DF73 /* BaseView.m in Sources */,
 				84B3DE6C274D32330005DF73 /* UIViewController+BRPickerView.m in Sources */,
 				84B3DE76274D32330005DF73 /* TableViewAnimationKit.m in Sources */,

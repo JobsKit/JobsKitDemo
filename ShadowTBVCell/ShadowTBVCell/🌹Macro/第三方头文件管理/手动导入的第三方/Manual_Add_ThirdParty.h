@@ -12,7 +12,7 @@
 #import "JobsBaseCustomizeUIKitCoreHeader.h"
 
 #pragma mark —— Manual_Add_ThirdParty
-#import "UserDefaultManager.h"
+#import "NSUserDefaults+Manager.h"
 #import "BWShareView.h"
 #import "PushAnimation.h"
 #import "BackAnimation.h"

@@ -14,7 +14,7 @@
 #import "CollectionViewCellHeader.h"
 
 #pragma mark —— Manual_Add_ThirdParty
-#import "UserDefaultManager.h"
+#import "NSUserDefaults+Manager.h"
 #import "SuspendLab.h"
 #import "SuspendBtn.h"
 #import "SuspendView.h"
