@@ -41,7 +41,7 @@
 //询问委托人是否应该在指定的文本字段中开始编辑
 - (BOOL)textFieldShouldBeginEditing:(ZYTextField *)textField{
     //取数据
-    NSArray *dataArr = (NSArray *)[UserDefaultManager fetchDataWithKey:@"dataMutArr"];
+    NSArray *dataArr = (NSArray *)[NSUserDefaults readWithKey:@"dataMutArr"];
     if (dataArr.count) {
         //有历史值存在再弹
         textField.dataMutArr = [NSMutableArray arrayWithArray:dataArr];
@@ -65,7 +65,7 @@
         UserDefaultModel *userDefaultModel = UserDefaultModel.new;
         userDefaultModel.key = @"dataMutArr";
         userDefaultModel.obj = textField.dataMutArr;
-        [UserDefaultManager storedData:userDefaultModel];
+        [NSUserDefaults updateWithModel:userDefaultModel];
     }
 }
 //告诉委托人对指定的文本字段停止编辑

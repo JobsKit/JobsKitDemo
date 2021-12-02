@@ -12,6 +12,11 @@
 #import "BaseViewControllerProtocol.h"
 #import "BaseCellProtocol.h"
 #import "BaseViewProtocol.h"
+#import "BaseTableViewHeaderFooterViewProtocol.h"
+#import "BaseButtonProtocol.h"
+
+#pragma mark —— NSUserDefaults
+#import "NSUserDefaults+Manager.h"
 
 #pragma mark —— UIViewModel
 #import "UIViewModel.h"
@@ -45,18 +50,23 @@
 #import "NSObject+RichText.h"
 #import "NSObject+Shake.h"
 #import "NSObject+Sound.h"
-/// NSObject+DataSave
+#import "NSObject+NTESVerifyCode.h"//网易云盾
+#import "NSObject+WHToast.h"//提示
+///【对FileFolderHandleTool的二次封装】 存数据，储存成功返回地址
 #import "NSObject+DataSave.h"
-/// NSObject+Time
+/// 时间相关方法
 #import "NSObject+Time.h"
-/// NSObject (Time)
+/// 时间相关模型
 #import "TimeModel.h"
-/// NSObject+DefConfig
+/// 线程定义
 #import "NSObject+DefConfig.h"
-/// NSObject+CallBackInfoByBlock
+/// 万物回调
 #import "NSObject+CallBackInfoByBlock.h"
+/// 万物数据绑定
+#import "NSObject+DataBinding.h"
 
 #pragma mark —— NSString
+#import "NSString+FilteringSpecialCharacters.h"// 特殊字符集
 #import "NSStringExtras.h"
 
 #pragma mark —— RedefineSys
@@ -77,7 +87,6 @@
 #import "SoundBtn.h"
 /// 高仿iOS长按删除+抖动
 #import "LGiOSBtn.h"
-
 
 #pragma mark —— UICollectionReusableView 用作基类
 #import "BaseCollectionReusableView.h"
