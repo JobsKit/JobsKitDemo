@@ -15,8 +15,6 @@
 
 @property (strong, nonatomic) UIWindow * window;
 
-+ (instancetype)sharedInstance;
-
 @end
 
 #pragma clang diagnostic pop

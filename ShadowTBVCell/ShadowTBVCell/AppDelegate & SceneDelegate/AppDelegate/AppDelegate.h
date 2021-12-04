@@ -17,7 +17,6 @@
 @property(readonly,strong)NSPersistentCloudKitContainer *persistentContainer;
 
 -(void)saveContext;
-+(instancetype)sharedInstance;
 
 @end
 

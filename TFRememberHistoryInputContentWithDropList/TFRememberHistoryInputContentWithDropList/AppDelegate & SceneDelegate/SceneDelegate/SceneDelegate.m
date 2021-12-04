@@ -12,24 +12,16 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunguarded-availability-new"
 
+SceneDelegate *sceneDelegate;
 @interface SceneDelegate ()
 
 @end
 
 @implementation SceneDelegate
 
-static SceneDelegate *static_sceneDelegate = nil;
-+(instancetype)sharedInstance{
-    @synchronized(self){
-        if (!static_sceneDelegate) {
-            static_sceneDelegate = SceneDelegate.new;
-        }
-    }return static_sceneDelegate;
-}
-
 -(instancetype)init{
     if (self = [super init]) {
-        static_sceneDelegate = self;
+        sceneDelegate = self;
     }return self;
 }
 

@@ -14,24 +14,16 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunguarded-availability-new"
 
+ShootingAppDelegate *appDelegate;
 @interface ShootingAppDelegate ()
 
 @end
 
 @implementation ShootingAppDelegate
 
-static ShootingAppDelegate *static_appDelegate = nil;
-+(instancetype)sharedInstance{
-    @synchronized(self){
-        if (!static_appDelegate) {
-            static_appDelegate = ShootingAppDelegate.new;
-        }
-    }return static_appDelegate;
-}
-
 -(instancetype)init{
     if (self = [super init]) {
-        static_appDelegate = self;
+        appDelegate = self;
     }return self;
 }
 //#pragma clang diagnostic push
@@ -70,7 +62,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     if (HDDeviceSystemVersion.floatValue < 13.0) {
         self.window.alpha = 1;
-        [[ShootingAppDelegate sharedInstance] Popupview];// 弹出框
+        [self Popupview];// 弹出框
     }return YES;
 }
 //系统版本低于iOS13.0的设备

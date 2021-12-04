@@ -14,6 +14,7 @@
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunguarded-availability-new"
 
+SceneDelegate *sceneDelegate;
 @interface SceneDelegate ()
 
 @property(nonatomic,strong)UIWindowScene *windowScene;
@@ -23,14 +24,10 @@
 
 @implementation SceneDelegate
 
-static SceneDelegate *_instance = nil;
-static dispatch_once_t onceToken;
-+ (instancetype)sharedInstance {
-    dispatch_once(&onceToken, ^{
-        if (!_instance) {
-            _instance = [[self alloc] init];
-        }
-    });return _instance;
+-(instancetype)init{
+    if (self = [super init]) {
+        sceneDelegate = self;
+    }return self;
 }
 
 - (void)scene:(UIScene *)scene

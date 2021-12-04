@@ -21,7 +21,6 @@
 @property(nonatomic,strong)JobsTabbarVC *tabBarVC;
 @property(nonatomic,strong)NoticePopupView *popupView;
 
-+(instancetype)sharedInstance;
 -(void)saveContext;
 
 @end

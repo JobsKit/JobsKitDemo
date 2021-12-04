@@ -1331,12 +1331,12 @@
 			isa = PBXGroup;
 			children = (
 				8445C22E275A4C3500CE16FB /* MacroDef_Size.h */,
-				8445C22F275A4C3500CE16FB /* 苹果产品尺寸 */,
+				8445C22F275A4C3500CE16FB /* AppleProductsScreenSize */,
 			);
 			path = MacroDef_Size;
 			sourceTree = "<group>";
 		};
-		8445C22F275A4C3500CE16FB /* 苹果产品尺寸 */ = {
+		8445C22F275A4C3500CE16FB /* AppleProductsScreenSize */ = {
 			isa = PBXGroup;
 			children = (
 				8445C230275A4C3500CE16FB /* 安全区域.png */,
@@ -1344,7 +1344,7 @@
 				8445C232275A4C3500CE16FB /* iPhone尺寸.png */,
 				8445C233275A4C3500CE16FB /* iPad尺寸.png */,
 			);
-			path = "苹果产品尺寸";
+			path = AppleProductsScreenSize;
 			sourceTree = "<group>";
 		};
 		8445C234275A4C3500CE16FB /* MacroDef_App */ = {

@@ -14,24 +14,16 @@ API_AVAILABLE(ios(13.0))
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wunguarded-availability-new"
 
+ShootingSceneDelegate *sceneDelegate;
 @interface ShootingSceneDelegate ()
 
 @end
 
 @implementation ShootingSceneDelegate
 
-static ShootingSceneDelegate *static_sceneDelegate = nil;
-+(instancetype)sharedInstance{
-    @synchronized(self){
-        if (!static_sceneDelegate) {
-            static_sceneDelegate = ShootingSceneDelegate.new;
-        }
-    }return static_sceneDelegate;
-}
-
 -(instancetype)init{
     if (self = [super init]) {
-        static_sceneDelegate = self;
+        sceneDelegate = self;
         [[NSNotificationCenter defaultCenter] addObserver:self
                                                  selector:@selector(noti1:)
                                                      name:UISceneWillConnectNotification
