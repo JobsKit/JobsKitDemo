@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5A00ADD28E6FC0900C1CB9E /* 2436x1125.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5A00ADC28E6FC0900C1CB9E /* 2436x1125.jpg */; };
+		C5A00ADF28E6FC7E00C1CB9E /* 2208x1242.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5A00ADE28E6FC7E00C1CB9E /* 2208x1242.jpg */; };
 		C5BDD39428E6B7C6006D2898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BDD39328E6B7C6006D2898 /* AppDelegate.m */; };
 		C5BDD39728E6B7C6006D2898 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BDD39628E6B7C6006D2898 /* SceneDelegate.m */; };
 		C5BDD39A28E6B7C6006D2898 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BDD39928E6B7C6006D2898 /* ViewController.m */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5A00ADC28E6FC0900C1CB9E /* 2436x1125.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2436x1125.jpg; sourceTree = "<group>"; };
+		C5A00ADE28E6FC7E00C1CB9E /* 2208x1242.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2208x1242.jpg; sourceTree = "<group>"; };
 		C5BDD38F28E6B7C6006D2898 /* Morning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5BDD39228E6B7C6006D2898 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C5BDD39328E6B7C6006D2898 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 		C5BDD3CC28E6BA2C006D2898 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C5A00ADC28E6FC0900C1CB9E /* 2436x1125.jpg */,
+				C5A00ADE28E6FC7E00C1CB9E /* 2208x1242.jpg */,
 				C5BDD39B28E6B7C6006D2898 /* Main.storyboard */,
 				C5BDD3A128E6B7C8006D2898 /* Assets.xcassets */,
 				C5BDD3A328E6B7C8006D2898 /* LaunchScreen.storyboard */,
@@ -284,8 +290,10 @@
 			files = (
 				C5BDD3D228E6C9F2006D2898 /* JStoOC.html in Resources */,
 				C5BDD3A528E6B7C8006D2898 /* LaunchScreen.storyboard in Resources */,
+				C5A00ADD28E6FC0900C1CB9E /* 2436x1125.jpg in Resources */,
 				C5BDD3A228E6B7C8006D2898 /* Assets.xcassets in Resources */,
 				C5BDD39D28E6B7C6006D2898 /* Main.storyboard in Resources */,
+				C5A00ADF28E6FC7E00C1CB9E /* 2208x1242.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,7 +500,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Morning/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -519,7 +527,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Morning/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
