@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<header>
+    
+<title id = "title">Title of this page</title>
+
+<!--样式从File.css文件中获取-->
+<link rel="stylesheet" type="text/css" href="File.css">
+<!--样式改变适应手机屏幕大小-->
+<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+<!--响应的方法从File.js文件中获取-->
+<!--<script type="text/javascript" src="File.js"></script>-->
+
+</header>
+
+<body>
+    // 防止 汉字在 APP 端乱码
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <!--    标签，css中设置样式时，会根据id来设置-->
+    <p id = "wql">This is my first try to write Html5 file.</p>
+    <br/>
+    <!--    加粗的文本，css中设置样式时，会根据id来设置-->
+    <b id = "myp">This text is bold</b>
+
+    <!--    换行符-->
+    <br/><br/><br/><br/>
+    
+    <!--    该按钮的目的是：点击后触发OC的方法-->
+    <button type="button" onclick = "JSCallOCMethod1()">JSCallOCMethod1</button>
+    <br/><br/>
+    
+    <button type="button" onclick = "JSCallOCMethod2()">JSCallOCMethod2</button>
+    <br/><br/>
+    
+    <button type="button" onclick = "jsCallOCReturnMethod()">jsCallOCReturnMethod </button>
+
+    <!--        定义各个方法-->
+    <script type="text/javascript">
+        
+    // js 主动调用 oc  方法  ，function JSCallOCMethod1 这个名字无关，这个是JS 绑定的
+    function JSCallOCMethod1(){
+        //  JSCallOCMethod1 是 oc 注册监听的方法
+window.webkit.messageHandlers.JSCallOCMethod1.postMessage({"key1":"value1","key2":"value2"});
+    }
+
+    // js 主动调用 oc  方法  ，function JSCallOCMethod2 这个名字无关，这个是JS 绑定的
+    function JSCallOCMethod2(){
+       //  JSCallOCMethod2 是 oc 注册监听的方法
+       window.webkit.messageHandlers.JSCallOCMethod2.postMessage({"key1":"value1","key2":"value2"});
+
+    }
+    
+    //OC 主动调用的方法  接收从OC传过来的值，需要OC调用该方法，并传入值
+    function OCCallJSMethod(jsonString){
+        alert('js获取到的值'+'OCCallJSMethod:'+jsonString);
+    }
+
+    //OC 主动调用的方法   jsCallOCReturnJsonStringMethod 这个才是与 OC 交互的方法
+    function jsCallOCReturnMethod(){
+        //  js 获取 OC 接口返回值  有参数  123123123
+        let jsonString = window.prompt("jsCallOCReturnJsonStringMethod","123123123");
+
+        //  js 获取 OC 接口返回值  无参数 
+        // let jsonString = window.prompt("jsCallOCReturnJsonStringMethod");
+        alert('js获取到的值:'+'jsCallOCReturnJsonStringMethod:'+jsonString);
+    }
+
+    </script>
+    
+</body>
+</html>
