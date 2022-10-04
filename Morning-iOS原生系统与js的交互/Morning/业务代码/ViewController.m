@@ -133,12 +133,12 @@ completionHandler:(void (^)(NSString * _Nullable result))completionHandler {
         _webView.navigationDelegate = self;
         // 是否允许手势左滑返回上一级, 类似导航控制的左滑返回
         _webView.allowsBackForwardNavigationGestures = YES;
-//        _webView.
+
         // 加载本地html文件
-        [_webView loadHTMLString:self.htmlStr
-                         baseURL:[NSURL fileURLWithPath:NSBundle.mainBundle.bundlePath]];
+//        [_webView loadHTMLString:self.htmlStr
+//                         baseURL:[NSURL fileURLWithPath:NSBundle.mainBundle.bundlePath]];
         // 加载本地URL
-        //[_webView loadRequest:self.urlRequest];
+        [_webView loadRequest:self.urlRequest];
         
     }return _webView;
 }
