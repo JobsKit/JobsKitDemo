@@ -151,7 +151,7 @@ completionHandler:(void (^)(NSString * _Nullable result))completionHandler {
 
 -(NSMutableURLRequest *)urlRequest{
     if(!_urlRequest){
-        _urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.chinadaily.com.cn"]];
+        _urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"https://www.wingsong.xyz/"]];
         [_urlRequest addValue:@"" forHTTPHeaderField:@"Cookie"];
     }return _urlRequest;
 }
