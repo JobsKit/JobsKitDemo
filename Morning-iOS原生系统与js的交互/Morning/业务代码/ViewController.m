@@ -9,6 +9,7 @@
 
 @interface ViewController ()
 
+@property(nonatomic,strong)NSString *urlStr;
 @property(nonatomic,strong)WKWebView *webView;
 @property(nonatomic,strong)WKBackForwardList *backForwardList;/// 可返回的页面列表, 存储已打开过的网页
 /// 加载一个本地的请求
@@ -29,10 +30,15 @@
 
 @implementation ViewController
 
+-(void)loadView{
+    [super loadView];
+    self.urlStr = @"https://www.ebaymart.online";
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.webView.alpha = 1;
-    [self kkk];
+//    [self kkk];
 }
 
 //-(void)touchesBegan:(NSSet<UITouch *> *)touches
@@ -133,12 +139,12 @@ completionHandler:(void (^)(NSString * _Nullable result))completionHandler {
         _webView.navigationDelegate = self;
         // 是否允许手势左滑返回上一级, 类似导航控制的左滑返回
         _webView.allowsBackForwardNavigationGestures = YES;
-//        _webView.
+
         // 加载本地html文件
-        [_webView loadHTMLString:self.htmlStr
-                         baseURL:[NSURL fileURLWithPath:NSBundle.mainBundle.bundlePath]];
+//        [_webView loadHTMLString:self.htmlStr
+//                         baseURL:[NSURL fileURLWithPath:NSBundle.mainBundle.bundlePath]];
         // 加载本地URL
-        //[_webView loadRequest:self.urlRequest];
+        [_webView loadRequest:self.urlRequest];
         
     }return _webView;
 }
@@ -151,7 +157,7 @@ completionHandler:(void (^)(NSString * _Nullable result))completionHandler {
 
 -(NSMutableURLRequest *)urlRequest{
     if(!_urlRequest){
-        _urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://www.chinadaily.com.cn"]];
+        _urlRequest = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:self.urlStr]];
         [_urlRequest addValue:@"" forHTTPHeaderField:@"Cookie"];
     }return _urlRequest;
 }

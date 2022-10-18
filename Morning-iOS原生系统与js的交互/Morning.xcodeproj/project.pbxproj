@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C548C47A28FD7FAF00FE297A /* Ebay启动图.png in Resources */ = {isa = PBXBuildFile; fileRef = C548C47928FD7FAF00FE297A /* Ebay启动图.png */; };
+		C5A00ADD28E6FC0900C1CB9E /* 2436x1125.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5A00ADC28E6FC0900C1CB9E /* 2436x1125.jpg */; };
+		C5A00ADF28E6FC7E00C1CB9E /* 2208x1242.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5A00ADE28E6FC7E00C1CB9E /* 2208x1242.jpg */; };
 		C5BDD39428E6B7C6006D2898 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BDD39328E6B7C6006D2898 /* AppDelegate.m */; };
 		C5BDD39728E6B7C6006D2898 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BDD39628E6B7C6006D2898 /* SceneDelegate.m */; };
 		C5BDD39A28E6B7C6006D2898 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BDD39928E6B7C6006D2898 /* ViewController.m */; };
@@ -40,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C548C47928FD7FAF00FE297A /* Ebay启动图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ebay启动图.png"; sourceTree = "<group>"; };
+		C5A00ADC28E6FC0900C1CB9E /* 2436x1125.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2436x1125.jpg; sourceTree = "<group>"; };
+		C5A00ADE28E6FC7E00C1CB9E /* 2208x1242.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2208x1242.jpg; sourceTree = "<group>"; };
 		C5BDD38F28E6B7C6006D2898 /* Morning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5BDD39228E6B7C6006D2898 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C5BDD39328E6B7C6006D2898 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -88,6 +94,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C548C47628FD7F8300FE297A /* 图片资源 */ = {
+			isa = PBXGroup;
+			children = (
+				C548C47828FD7F9200FE297A /* Ebay启动图 */,
+				C548C47728FD7F8D00FE297A /* 沃尔玛启动图 */,
+			);
+			path = "图片资源";
+			sourceTree = "<group>";
+		};
+		C548C47728FD7F8D00FE297A /* 沃尔玛启动图 */ = {
+			isa = PBXGroup;
+			children = (
+				C5A00ADC28E6FC0900C1CB9E /* 2436x1125.jpg */,
+				C5A00ADE28E6FC7E00C1CB9E /* 2208x1242.jpg */,
+			);
+			path = "沃尔玛启动图";
+			sourceTree = "<group>";
+		};
+		C548C47828FD7F9200FE297A /* Ebay启动图 */ = {
+			isa = PBXGroup;
+			children = (
+				C548C47928FD7FAF00FE297A /* Ebay启动图.png */,
+			);
+			path = "Ebay启动图";
+			sourceTree = "<group>";
+		};
 		C5BDD38628E6B7C6006D2898 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +190,7 @@
 		C5BDD3CC28E6BA2C006D2898 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				C548C47628FD7F8300FE297A /* 图片资源 */,
 				C5BDD39B28E6B7C6006D2898 /* Main.storyboard */,
 				C5BDD3A128E6B7C8006D2898 /* Assets.xcassets */,
 				C5BDD3A328E6B7C8006D2898 /* LaunchScreen.storyboard */,
@@ -266,7 +299,7 @@
 				Base,
 			);
 			mainGroup = C5BDD38628E6B7C6006D2898;
-			productRefGroup = C5BDD39028E6B7C6006D2898 /* Products */;
+			productRefGroup = C5BDD38628E6B7C6006D2898;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -284,8 +317,11 @@
 			files = (
 				C5BDD3D228E6C9F2006D2898 /* JStoOC.html in Resources */,
 				C5BDD3A528E6B7C8006D2898 /* LaunchScreen.storyboard in Resources */,
+				C5A00ADD28E6FC0900C1CB9E /* 2436x1125.jpg in Resources */,
 				C5BDD3A228E6B7C8006D2898 /* Assets.xcassets in Resources */,
+				C548C47A28FD7FAF00FE297A /* Ebay启动图.png in Resources */,
 				C5BDD39D28E6B7C6006D2898 /* Main.storyboard in Resources */,
+				C5A00ADF28E6FC7E00C1CB9E /* 2208x1242.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,8 +527,9 @@
 				DEVELOPMENT_TEAM = K92UCMVH8G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Morning/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Ebay;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -518,8 +555,9 @@
 				DEVELOPMENT_TEAM = K92UCMVH8G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Morning/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Ebay;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
