@@ -279,6 +279,7 @@
 				C5BDD38B28E6B7C6006D2898 /* Sources */,
 				C5BDD38C28E6B7C6006D2898 /* Frameworks */,
 				C5BDD38D28E6B7C6006D2898 /* Resources */,
+				C5A06E3529002A34002392AB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -444,6 +445,23 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		C5A06E3529002A34002392AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n# 如果是Debug环境并且目录存在开始打包\nif [ \"${CONFIGURATION}\" = \"Debug\" ] && [ -d \"${BUILD_ROOT}/${CONFIGURATION}-iphoneos\" ]\nthen\n\n# 打开app目录\ncd ${BUILD_ROOT}/${CONFIGURATION}-iphoneos\n\n# 如果Payload存在, 删除Payload避免新建文件夹失败\nif [ -d \"Payload\" ]\nthen\nrm -rf Payload\necho \"Payload已存在并移除完毕!\"\nfi\n\n# 创建Payload文件夹\nmkdir Payload\n# 拷贝app到Payload\ncp -rf ${PROJECT_NAME}.app Payload\n# 打包成ipa\nzip -r ${PROJECT_NAME}.ipa Payload\n# 打开当前目录\nopen .\n\nfi\n";
 		};
 		DA112948EBA73C7546744F51 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -651,13 +669,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K92UCMVH8G;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Morning/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Ebay;
+				INFOPLIST_KEY_CFBundleDisplayName = Walmart;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -668,8 +687,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = JobsCom.Morning;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tJSWyn.XkNxJpeJK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -681,13 +701,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K92UCMVH8G;
 				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Morning/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Ebay;
+				INFOPLIST_KEY_CFBundleDisplayName = Walmart;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -698,8 +719,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = JobsCom.Morning;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tJSWyn.XkNxJpeJK;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
