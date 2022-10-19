@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BC41FCAF87BBBF2A7DE36A8 /* Pods_MorningTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F559552E7B50F16BB63FAD /* Pods_MorningTests.framework */; };
+		7450BA1F3C0F1A73B0DF7830 /* Pods_Morning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DFCE1DD0E7AA655CC8C54E8 /* Pods_Morning.framework */; };
 		C548C47A28FD7FAF00FE297A /* Ebay启动图.png in Resources */ = {isa = PBXBuildFile; fileRef = C548C47928FD7FAF00FE297A /* Ebay启动图.png */; };
 		C5A00ADD28E6FC0900C1CB9E /* 2436x1125.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5A00ADC28E6FC0900C1CB9E /* 2436x1125.jpg */; };
 		C5A00ADF28E6FC7E00C1CB9E /* 2208x1242.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C5A00ADE28E6FC7E00C1CB9E /* 2208x1242.jpg */; };
@@ -23,6 +25,7 @@
 		C5BDD3BE28E6B7C8006D2898 /* MorningUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BDD3BD28E6B7C8006D2898 /* MorningUITestsLaunchTests.m */; };
 		C5BDD3D028E6C46A006D2898 /* WeakWebViewScriptMessageDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5BDD3CF28E6C46A006D2898 /* WeakWebViewScriptMessageDelegate.m */; };
 		C5BDD3D228E6C9F2006D2898 /* JStoOC.html in Resources */ = {isa = PBXBuildFile; fileRef = C5BDD3D128E6C9F2006D2898 /* JStoOC.html */; };
+		C5D6C3E8B823A10A35E0D413 /* Pods_Morning_MorningUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FEFC7B2583F873B54CE3C61F /* Pods_Morning_MorningUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +46,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15E78355EE1A2E646B4B4A80 /* Pods-Morning-MorningUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning-MorningUITests.release.xcconfig"; path = "Target Support Files/Pods-Morning-MorningUITests/Pods-Morning-MorningUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3460903F988571666FF86A4B /* Pods-Morning.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning.debug.xcconfig"; path = "Target Support Files/Pods-Morning/Pods-Morning.debug.xcconfig"; sourceTree = "<group>"; };
+		48B1167A11CFA6BB6A2E14D4 /* Pods-Morning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning.release.xcconfig"; path = "Target Support Files/Pods-Morning/Pods-Morning.release.xcconfig"; sourceTree = "<group>"; };
+		6DFCE1DD0E7AA655CC8C54E8 /* Pods_Morning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Morning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		902794F0657A6D213D88BAFD /* Pods-MorningTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorningTests.release.xcconfig"; path = "Target Support Files/Pods-MorningTests/Pods-MorningTests.release.xcconfig"; sourceTree = "<group>"; };
+		92F559552E7B50F16BB63FAD /* Pods_MorningTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MorningTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CA9FF7830B4717510FBD3E9 /* Pods-Morning-MorningUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Morning-MorningUITests.debug.xcconfig"; path = "Target Support Files/Pods-Morning-MorningUITests/Pods-Morning-MorningUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A80666AC461CE5100EB4D846 /* Pods-MorningTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MorningTests.debug.xcconfig"; path = "Target Support Files/Pods-MorningTests/Pods-MorningTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C548C47928FD7FAF00FE297A /* Ebay启动图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Ebay启动图.png"; sourceTree = "<group>"; };
+		C548C4B528FFEC6200FE297A /* MorningPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MorningPrefixHeader.pch; sourceTree = "<group>"; };
+		C548C4D128FFEFF300FE297A /* MacroDef_SysWarning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDef_SysWarning.h; sourceTree = "<group>"; };
+		C548C4D228FFF05700FE297A /* MacroDef_Size.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDef_Size.h; sourceTree = "<group>"; };
+		C548C4D328FFF09700FE297A /* MacroDef_AppDeviceScreenSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacroDef_AppDeviceScreenSize.h; sourceTree = "<group>"; };
 		C5A00ADC28E6FC0900C1CB9E /* 2436x1125.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2436x1125.jpg; sourceTree = "<group>"; };
 		C5A00ADE28E6FC7E00C1CB9E /* 2208x1242.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2208x1242.jpg; sourceTree = "<group>"; };
 		C5BDD38F28E6B7C6006D2898 /* Morning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morning.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +82,7 @@
 		C5BDD3CE28E6C46A006D2898 /* WeakWebViewScriptMessageDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakWebViewScriptMessageDelegate.h; sourceTree = "<group>"; };
 		C5BDD3CF28E6C46A006D2898 /* WeakWebViewScriptMessageDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakWebViewScriptMessageDelegate.m; sourceTree = "<group>"; };
 		C5BDD3D128E6C9F2006D2898 /* JStoOC.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JStoOC.html; sourceTree = "<group>"; };
+		FEFC7B2583F873B54CE3C61F /* Pods_Morning_MorningUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Morning_MorningUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7450BA1F3C0F1A73B0DF7830 /* Pods_Morning.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BC41FCAF87BBBF2A7DE36A8 /* Pods_MorningTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,12 +106,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5D6C3E8B823A10A35E0D413 /* Pods_Morning_MorningUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20FB84CC9AEE6B65B4DF2451 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3460903F988571666FF86A4B /* Pods-Morning.debug.xcconfig */,
+				48B1167A11CFA6BB6A2E14D4 /* Pods-Morning.release.xcconfig */,
+				9CA9FF7830B4717510FBD3E9 /* Pods-Morning-MorningUITests.debug.xcconfig */,
+				15E78355EE1A2E646B4B4A80 /* Pods-Morning-MorningUITests.release.xcconfig */,
+				A80666AC461CE5100EB4D846 /* Pods-MorningTests.debug.xcconfig */,
+				902794F0657A6D213D88BAFD /* Pods-MorningTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C548C47628FD7F8300FE297A /* 图片资源 */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +152,16 @@
 			path = "Ebay启动图";
 			sourceTree = "<group>";
 		};
+		C548C47B28FFE9A500FE297A /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				C548C4D228FFF05700FE297A /* MacroDef_Size.h */,
+				C548C4D328FFF09700FE297A /* MacroDef_AppDeviceScreenSize.h */,
+				C548C4D128FFEFF300FE297A /* MacroDef_SysWarning.h */,
+			);
+			path = 3rd;
+			sourceTree = "<group>";
+		};
 		C5BDD38628E6B7C6006D2898 = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +169,8 @@
 				C5BDD3B028E6B7C8006D2898 /* MorningTests */,
 				C5BDD3BA28E6B7C8006D2898 /* MorningUITests */,
 				C5BDD39028E6B7C6006D2898 /* Products */,
+				20FB84CC9AEE6B65B4DF2451 /* Pods */,
+				D005DA0AE6A21BD4F37B9E8D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -143,6 +187,8 @@
 		C5BDD39128E6B7C6006D2898 /* Morning */ = {
 			isa = PBXGroup;
 			children = (
+				C548C4B528FFEC6200FE297A /* MorningPrefixHeader.pch */,
+				C548C47B28FFE9A500FE297A /* 3rd */,
 				C5BDD3CD28E6BA7A006D2898 /* 业务代码 */,
 				C5BDD3A628E6B7C8006D2898 /* Info.plist */,
 				C5BDD3CC28E6BA2C006D2898 /* Other */,
@@ -212,6 +258,16 @@
 			path = "业务代码";
 			sourceTree = "<group>";
 		};
+		D005DA0AE6A21BD4F37B9E8D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DFCE1DD0E7AA655CC8C54E8 /* Pods_Morning.framework */,
+				FEFC7B2583F873B54CE3C61F /* Pods_Morning_MorningUITests.framework */,
+				92F559552E7B50F16BB63FAD /* Pods_MorningTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,6 +275,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5BDD3C128E6B7C8006D2898 /* Build configuration list for PBXNativeTarget "Morning" */;
 			buildPhases = (
+				84186029D4D21FEA118246DA /* [CP] Check Pods Manifest.lock */,
 				C5BDD38B28E6B7C6006D2898 /* Sources */,
 				C5BDD38C28E6B7C6006D2898 /* Frameworks */,
 				C5BDD38D28E6B7C6006D2898 /* Resources */,
@@ -236,6 +293,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5BDD3C428E6B7C8006D2898 /* Build configuration list for PBXNativeTarget "MorningTests" */;
 			buildPhases = (
+				DA112948EBA73C7546744F51 /* [CP] Check Pods Manifest.lock */,
 				C5BDD3A928E6B7C8006D2898 /* Sources */,
 				C5BDD3AA28E6B7C8006D2898 /* Frameworks */,
 				C5BDD3AB28E6B7C8006D2898 /* Resources */,
@@ -254,6 +312,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C5BDD3C728E6B7C8006D2898 /* Build configuration list for PBXNativeTarget "MorningUITests" */;
 			buildPhases = (
+				ABFDEB6868C4815C201E144E /* [CP] Check Pods Manifest.lock */,
 				C5BDD3B328E6B7C8006D2898 /* Sources */,
 				C5BDD3B428E6B7C8006D2898 /* Frameworks */,
 				C5BDD3B528E6B7C8006D2898 /* Resources */,
@@ -340,6 +399,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84186029D4D21FEA118246DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Morning-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABFDEB6868C4815C201E144E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Morning-MorningUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA112948EBA73C7546744F51 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MorningTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C5BDD38B28E6B7C6006D2898 /* Sources */ = {
@@ -519,12 +647,14 @@
 		};
 		C5BDD3C228E6B7C8006D2898 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3460903F988571666FF86A4B /* Pods-Morning.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K92UCMVH8G;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Morning/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Ebay;
@@ -547,12 +677,14 @@
 		};
 		C5BDD3C328E6B7C8006D2898 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48B1167A11CFA6BB6A2E14D4 /* Pods-Morning.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = K92UCMVH8G;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/$(PROJECT_NAME)PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Morning/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Ebay;
@@ -575,6 +707,7 @@
 		};
 		C5BDD3C528E6B7C8006D2898 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A80666AC461CE5100EB4D846 /* Pods-MorningTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -593,6 +726,7 @@
 		};
 		C5BDD3C628E6B7C8006D2898 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 902794F0657A6D213D88BAFD /* Pods-MorningTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -611,6 +745,7 @@
 		};
 		C5BDD3C828E6B7C8006D2898 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CA9FF7830B4717510FBD3E9 /* Pods-Morning-MorningUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -627,6 +762,7 @@
 		};
 		C5BDD3C928E6B7C8006D2898 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 15E78355EE1A2E646B4B4A80 /* Pods-Morning-MorningUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

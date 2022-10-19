@@ -1,0 +1,34 @@
+# Uncomment the next line to define a global platform for your project
+
+# 下面两行是指明依赖库的来源地址
+# source 'https://github.com/CocoaPods/Specs.git'# 使用官方默认地址（默认）
+# source 'https://github.com/Artsy/Specs.git'# 使用其他来源地址
+
+# install! 只走一次，多次使用只以最后一个标准执行
+# deterministic_uuids 解决与私有库的冲突
+# generate_multiple_pod_projects 可以让每个依赖都作为一个单独的项目引入，大大增加了解析速度；cocoapods 1.7 以后支持
+# disable_input_output_paths ？？？
+# 需要特别说明的：在 post_install 时，为了一些版本的兼容，需要遍历所有 target，调整一部分库的版本；但是如果开启了 generate_multiple_pod_projects 的话，由于项目结构的变化，installer.pod_targets 就没办法获得所有 pods 引入的 target 了
+install! 'cocoapods',:deterministic_uuids=>false,generate_multiple_pod_projects: true,disable_input_output_paths: true
+
+platform :ios, '10.0'
+inhibit_all_warnings!
+use_frameworks!
+
+target 'Morning' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Morning
+
+
+  target 'MorningTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MorningUITests' do
+    # Pods for testing
+  end
+
+end

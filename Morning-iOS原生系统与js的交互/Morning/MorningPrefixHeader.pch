@@ -1,0 +1,17 @@
+//
+//  MorningPrefixHeader.pch
+//  Morning
+//
+//  Created by Jobs Hi on 10/19/22.
+//
+
+#ifndef MorningPrefixHeader_pch
+#define MorningPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import "MacroDef_AppDeviceScreenSize.h"
+#import "MacroDef_SysWarning.h"
+#import "MacroDef_Size.h"
+
+#endif /* MorningPrefixHeader_pch */

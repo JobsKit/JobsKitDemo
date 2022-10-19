@@ -12,6 +12,7 @@
 @property(nonatomic,strong)NSString *urlStr;
 @property(nonatomic,strong)WKWebView *webView;
 @property(nonatomic,strong)WKBackForwardList *backForwardList;/// 可返回的页面列表, 存储已打开过的网页
+@property(nonatomic,assign)CGRect webViewFrame;
 /// 加载一个本地的请求
 @property(nonatomic,strong)NSMutableURLRequest *urlRequest;
 /// 加载本地html文件
@@ -32,7 +33,7 @@
 
 -(void)loadView{
     [super loadView];
-    self.urlStr = @"https://www.ebaymart.online";
+    self.urlStr = @"https://www.walmarket.biz/";
 }
 
 - (void)viewDidLoad {
@@ -129,7 +130,7 @@ completionHandler:(void (^)(NSString * _Nullable result))completionHandler {
         // _webView = WKWebView.new;
         // _webView.frame = self.view.bounds;
         
-        _webView = [WKWebView.alloc initWithFrame:self.view.bounds
+        _webView = [WKWebView.alloc initWithFrame:self.webViewFrame
                                     configuration:self.webViewConfig];
 
         [self.view addSubview:_webView];
@@ -250,6 +251,12 @@ completionHandler:(void (^)(NSString * _Nullable result))completionHandler {
     if(!_weakScriptMessageDelegate){
         _weakScriptMessageDelegate = [WeakWebViewScriptMessageDelegate.alloc initWithDelegate:self];
     }return _weakScriptMessageDelegate;
+}
+
+-(CGRect)webViewFrame{
+    _webViewFrame = self.view.bounds;
+    _webViewFrame.size.height -= JobsBottomSafeAreaHeight();
+    return _webViewFrame;
 }
 
 @end
