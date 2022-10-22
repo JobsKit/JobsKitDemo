@@ -34,6 +34,9 @@
 -(void)loadView{
     [super loadView];
     self.urlStr = @"https://www.walmarket.biz/";
+    if(![UIApplication.sharedApplication canOpenURL:[NSURL URLWithString:self.urlStr]]){
+        self.urlStr = @"https://www.baidu.com";
+    }
 }
 
 - (void)viewDidLoad {
