@@ -272,7 +272,7 @@
 				Base,
 			);
 			mainGroup = C5BDD38628E6B7C6006D2898;
-			productRefGroup = C5BDD39028E6B7C6006D2898 /* Products */;
+			productRefGroup = C5BDD38628E6B7C6006D2898 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
